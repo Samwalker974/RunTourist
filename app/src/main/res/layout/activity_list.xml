@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity2">
+    <ImageView
+        android:id="@+id/imgBack"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        app:srcCompat="@drawable/river1"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        />
+    <TextView
+        android:id="@+id/textH2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:background="@color/white"
+        android:text="RunTourist : Nord"/>
+
+    <ImageView
+        android:id="@+id/rect"
+        android:layout_below="@+id/textH2"
+        android:background="@drawable/rect_radius"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <ListView
+        android:id="@+id/listA"
+        android:layout_width="wrap_content"
+        android:layout_height="460dp"
+        android:layout_below="@id/textH2"
+        android:layout_alignParentRight="true"
+
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="129dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="61dp"
+        android:layout_marginBottom="124dp" />
+
+
+</RelativeLayout>
