@@ -4,108 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-    android:background="@drawable/background" >
+    tools:context=".MainActivity"
+    android:background="@drawable/background">
 
-   // Mise en place de l'image 1
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="300dp"
-        android:layout_height="125dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="17dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_launcher_foreground"
-        tools:ignore="VectorDrawableCompat"
-        />
-
-    // Mise en place de l'image 2
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="300dp"
-        android:layout_height="125dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="170dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_launcher_foreground"
-        tools:ignore="VectorDrawableCompat"
-        />
-
-    // Mise en place de l'image 3
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="300dp"
-        android:layout_height="125dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="320dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_launcher_foreground"
-        tools:ignore="VectorDrawableCompat"
-        />
-
-    // Mise en place de l'image 4
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="300dp"
-        android:layout_height="125dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="470dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_launcher_foreground"
-        tools:ignore="VectorDrawableCompat"
-        />
-
-    // A revoir le placement pour le bouton Start
-    <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="150dp"
-        android:layout_marginTop="500dp"
-        android:layout_marginRight="150dp"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView">
-
-
-        <Space
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1" />
-
-        // Bouton Start Pour accédé aux photo de cardinalités
-        <Button
-            android:id="@+id/button1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="0"
-            android:text="Start"
-
-            />
-
-    </LinearLayout>
-
-   /* <TextView
+    <TextView
         android:id="@+id/textHead"
         android:background="@color/white"
         android:layout_width="match_parent"
@@ -113,9 +15,78 @@
         android:layout_alignParentTop="true"
         android:padding="5dp"
         android:textAlignment="center"
-*/
         android:gravity="center"
         android:text="RunTourist" />
+
+
+
+    <ImageView
+        android:id="@+id/imgN"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/textHead"
+        android:layout_above="@id/imgE"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/nord"
+        tools:ignore="VectorDrawableCompat"
+        android:layout_marginTop="10dp"
+        />
+
+
+    <ImageView
+        android:id="@+id/imgE"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_above="@id/button1"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/est"
+        tools:ignore="VectorDrawableCompat"
+        android:layout_marginTop="10dp"
+        />
+
+
+    <ImageView
+        android:id="@+id/imgO"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/button1"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/ouest"
+        tools:ignore="VectorDrawableCompat"
+        android:layout_marginTop="10dp"
+        />
+
+
+    <ImageView
+        android:id="@+id/imgS"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/imgO"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/sud"
+        tools:ignore="VectorDrawableCompat"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentBottom="true"
+        />
+
+    <!-- Commentaire -->
+
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@color/grey"
+        android:textColor="@color/white"
+        android:text="Start"
+        android:onClick="showImg"
+        />
+
+
+
+
 
 
 
