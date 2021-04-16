@@ -45,6 +45,11 @@ public class MainActivity extends Activity {
         startActivity(intent);
 
     }
+    public void pageEst(View view){
+        Intent intent =new Intent(context,MainActivity2.class);
+        startActivity(intent);
+
+    }
 
 
 }
