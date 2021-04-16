@@ -44,6 +44,7 @@
         app:srcCompat="@drawable/est"
         tools:ignore="VectorDrawableCompat"
         android:layout_margin="10dp"
+        android:onClick="pageEst"
         />
 
 
