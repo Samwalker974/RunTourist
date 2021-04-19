@@ -1,5 +1,6 @@
 package com.example.runtourist;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Activity;
@@ -10,7 +11,7 @@ import android.widget.ImageView;
 import android.widget.Button;
 import android.view.View;
 
-public class MainActivity extends Activity {
+public class MainActivity extends Activity{
     private ImageView imgN, imgE, imgO, imgS;
     private Button button1;
     Context context;
@@ -19,6 +20,7 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         
          // Constructeur qui recupere les id des imageView
         // Modification des noms plus simple et identifiable
@@ -48,7 +50,6 @@ public class MainActivity extends Activity {
     public void pageEst(View view){
         Intent intent =new Intent(context,MainActivity2.class);
         startActivity(intent);
-
     }
 
 
