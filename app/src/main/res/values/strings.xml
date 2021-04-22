@@ -9,4 +9,35 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    
+    <string name="est">Est</string>
+    <string name="nord">Nord</string>
+    <string name="ouest" >Ouest</string>
+    <string name="sud">Sud</string>
+    
+    <string name="bassin_la_paix">Bassin la Paix</string>
+    <string name="info_bassin_la_paix">Le bassin la Paix est situé sur la rivière des Roches à la frontière des communes de Bras-Panon et de Saint-Benoît.</string>
+    <string name="info_c_bassin_la_paix">Le 11 mars 2018, deux jeunes touristes se sont noyés au Bassin La Paix (voir la suite) Suite au terrible incident, les communes de Bras-Panon et de Saint-Benoît ont pris un arrêté dinterdiction de baignade au Bassin La Paix le lundi 12 mars 2018. Laccès reste toujours possible.Mise à jour du 14 janvier : le dimanche 13 janvier 2019, une nouvelle noyade a entraîné le décès dun homme de 18 ans. Soyez plus que vigilent si vous bravez linterdiction : le bassin comporte des courants à la surface et sous leau. Il parait paisible (ce qui est faux), on pense pouvoir le traverser facilement (à tort), leau est fraîche (très fraîche), et enfin, il semblerait que personne ne connaisse vraiment la profondeur du bassin (ne vous approchez surtout pas des chutes deaux)</string>
+
+    <string name="voile_mariee">Le voile de la Mariée</string>
+    <string name="info_voile_mariee">UNE LÉGENDE GRAVÉE DANS LA ROCHE La réputation de la cascade de Salazie est également liée à sa légende, celle d’un amour tragique sur fond de nature sauvage.</string>
+    <string name="info_c_voile_mariee">Le cirque de Salazie  abrite les plus grands bambous de l’île, on y cultive le chouchou (christophine), la bibasse, les agrumes, la pêche et la banane. Surplombée par la forêt de Bélouve et ses mystères, Salazie offre également de superbes cascades  au cœur d’une verdure luxuriante aux mille et une nuances de vert. En hélicoptère ou en randonnée pédestre, découvrez la plus visitée d’entre elles : la cascade du Voile de la mariée. </string>
+
+    <string name="plaine_sable">La Plaine des Sables</string>
+    <string name="info_plaine_sable">La route qui conduit au piton de la Fournaise traverse un paysage totalement lunaire : la plaine des Sables, étendue de scories et de roches volcaniques à plus de 2 000 mètres d’altitude.</string>
+    <string name="info_c_plaine_sable">Un univers lunaire d’une beauté irréelle qui vous amène jusqu’au Pas de Bellecombe.La Plaine des Sables est une vaste étendue lunaire aux reflets mordorés et rougeâtres. Elle est délimitée par le rempart des Sables et le rempart du pas de Bellecombe.Une table d’orientation dénomme l’ensemble de ces curiosités naturelles.</string>
+
+    <string name="cascade_niagara">La Cascade Niagara</string>
+    <string name="info_cascade_niagara"></string>
+    <string name="info_c_cascade_niagara"></string>
+    
+    <string name="jardin_etat">Le Jardin de L\'Etat</string>
+    <string name="info_jardin_etat"></string>
+    <string name="info_c_jardin_etat"></string>
+
+    <string name="roche_ecrite">La Roche Ecrite</string>
+    <string name="info_roche_ecrite"></string>
+    <string name="info_c_roche_ecrite"></string>
+
+
 </resources>

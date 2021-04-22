@@ -41,9 +41,9 @@ public class AffMyCell extends ArrayAdapter<MyCell> {
         //On indique ainsi la cellule choisi
         MyCell s = getItem(position);
         //On implemente selon la position choissi on indique le nom ,l'information et l'image associé donner par une cellule de ma liste de cellule
-        textNom.setText(s.getNomLieux());
-        textInfo.setText(s.getTextInfo());
-        image.setBackgroundColor(s.getImgC());
+        textNom.setText(s.getIdLieux());
+        textInfo.setText(s.getIdTextInfo());
+        image.setImageResource(s.getIdImgC());
         //On Retourne ma cellule lors de chaque repetition
         return cellView;
     }

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/trees1">
+
+    <ImageView
+        android:id="@+id/backnord"
+        android:layout_width="300dp"
+        android:layout_height="130dp"
+        android:background="@drawable/rect_grey"
+        android:layout_below="@id/textHead"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentRight="true"
+        android:onClick="pageNord"
+        />
+
+    <ImageView
+        android:id="@+id/backest"
+        android:layout_width="300dp"
+        android:layout_height="130dp"
+        android:background="@drawable/rect_grey"
+        android:layout_below="@id/backouest"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentRight="true"
+        android:onClick="pageEst"
+        />
+    <ImageView
+        android:id="@+id/backouest"
+        android:layout_width="300dp"
+        android:layout_height="130dp"
+        android:background="@drawable/rect_grey1"
+        android:layout_below="@id/backnord"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentLeft="true"
+        />
+    <ImageView
+        android:id="@+id/backsud"
+        android:layout_width="300dp"
+        android:layout_height="130dp"
+        android:background="@drawable/rect_grey1"
+        android:layout_below="@id/backest"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentLeft="true"
+        />
+
+
+    <TextView
+        android:id="@+id/textHead"
+        android:fontFamily="@font/market_felt"
+        android:background="@color/blue1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:padding="5dp"
+        android:textAlignment="center"
+        android:textColor="@color/yellow1"
+        android:gravity="center"
+        android:textSize="31dp"
+        android:text="RunTourist"
+        />
+
+
+    <ImageView
+        android:id="@+id/imgN"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignTop="@id/backnord"
+        android:layout_alignLeft="@id/backnord"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/nord"
+        tools:ignore="VectorDrawableCompat" />
+    <TextView
+        android:id="@+id/textN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/market_felt"
+        android:textSize="40dp"
+        android:text="Nord"
+        android:layout_alignTop="@id/backnord"
+        android:layout_alignBottom="@+id/backnord"
+        android:layout_marginLeft="50dp"
+        android:gravity="center"
+        android:layout_toRightOf="@+id/imgN"
+        />
+
+
+    <ImageView
+        android:id="@+id/imgE"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignTop="@id/backest"
+        android:layout_alignLeft="@+id/backest"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/est"
+        tools:ignore="VectorDrawableCompat"
+
+        />
+    <TextView
+        android:id="@+id/textE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/market_felt"
+        android:textSize="40dp"
+        android:text="Est"
+        android:layout_alignTop="@id/backest"
+        android:layout_alignBottom="@+id/backest"
+        android:layout_marginLeft="50dp"
+        android:gravity="center"
+        android:layout_toRightOf="@+id/imgN"
+        />
+
+
+    <ImageView
+        android:id="@+id/imgO"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignTop="@id/backouest"
+        android:layout_alignRight="@+id/backouest"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+
+
+        app:srcCompat="@drawable/ouest"
+        tools:ignore="VectorDrawableCompat"
+
+        />
+    <TextView
+        android:id="@+id/textO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/market_felt"
+        android:textSize="40dp"
+        android:text="Ouest"
+        android:layout_alignTop="@id/backouest"
+        android:layout_alignBottom="@+id/backouest"
+        android:layout_marginRight="50dp"
+        android:gravity="center"
+        android:layout_toLeftOf="@id/imgO"
+
+        />
+
+
+    <ImageView
+        android:id="@+id/imgS"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:layout_alignTop="@id/backsud"
+        android:layout_alignRight="@id/backsud"
+        app:srcCompat="@drawable/sud"
+        tools:ignore="VectorDrawableCompat"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        />
+    <TextView
+        android:id="@+id/textS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/market_felt"
+        android:textSize="40dp"
+        android:text="Sud"
+        android:layout_alignTop="@id/backsud"
+        android:layout_alignBottom="@+id/backsud"
+        android:layout_marginRight="50dp"
+        android:gravity="center"
+        android:layout_toLeftOf="@id/imgO"
+
+        />
+
+    <!-- Commentaire -->
+
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@color/blue1"
+        android:textColor="@color/yellow1"
+        android:fontFamily="@font/market_felt"
+        android:textSize="30dp"
+        android:text="Start"
+        android:padding="20dp"
+        android:onClick="showImg"
+        />
+
+
+
+
+
+
+
+</RelativeLayout>

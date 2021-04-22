@@ -20,6 +20,8 @@
         android:layout_alignParentTop="true"
         android:textAlignment="center"
         android:gravity="center"
+        android:textSize="20dp"
+        android:padding="5dp"
         android:background="@color/white"
         android:text="RunTourist : Nord"/>
 
@@ -35,18 +37,17 @@
 
     <ListView
         android:id="@+id/listA"
-        android:layout_width="wrap_content"
-        android:layout_height="460dp"
+        android:layout_width="289dp"
+        android:layout_height="454dp"
         android:layout_below="@id/textH2"
         android:layout_alignParentRight="true"
 
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="50dp"
+
         android:layout_marginLeft="50dp"
-        android:layout_marginTop="129dp"
-        android:layout_marginEnd="50dp"
-        android:layout_marginRight="61dp"
-        android:layout_marginBottom="124dp" />
+        android:layout_marginTop="141dp"
+        android:layout_marginRight="26dp"
+        android:layout_marginBottom="99dp" />
 
 
 </RelativeLayout>

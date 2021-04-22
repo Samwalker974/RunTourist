@@ -3,26 +3,33 @@
     android:orientation="horizontal" android:layout_width="match_parent"
     android:layout_height="match_parent"
     >
+
     <ImageView
         android:id="@+id/imgLieux"
-        android:layout_width="100dp"
-        android:layout_height="60dp"
-        android:background="@color/black"/>
+        android:layout_width="150dp"
+        android:layout_margin="10dp"
+        android:layout_height="match_parent" />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/fonduj"
         android:orientation="vertical">
         <TextView
             android:id="@+id/textNom"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
+            android:textColor="@color/black"
             android:text="Lieux 1"
             android:textSize="20dp"/>
+
         <TextView
+            android:textColor="@color/black"
             android:id="@+id/textInfo"
             android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:text="          Adrresse ici     :  note 5/5       :     bassin"/>
+            android:layout_height="100dp"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:text="          Adrresse ici     :  note 5/5       :     bassin" />
     </LinearLayout>
 </LinearLayout>

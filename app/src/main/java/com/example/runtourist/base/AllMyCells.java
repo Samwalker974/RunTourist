@@ -5,12 +5,18 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
+import androidx.annotation.Nullable;
+
 public class AllMyCells extends SQLiteOpenHelper {
     String TABLE_COMMENTS = "comments" ;
     String COLUMN_ID = "_id";
     String COLUMN_COMMENT ="comment";
-
     String DATABASE_CREATE = "create table "+ TABLE_COMMENTS + "(" + COLUMN_ID + " integer primary key autoincrement, "+ COLUMN_COMMENT + " text not null ; ";
+
+    public AllMyCells(@Nullable Context context, @Nullable String name, @Nullable SQLiteDatabase.CursorFactory factory, int version) {
+        super(context, name, factory, version);
+    }
+
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
 
