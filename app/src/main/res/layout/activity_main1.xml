@@ -10,7 +10,7 @@
     <ImageView
         android:id="@+id/backnord"
         android:layout_width="300dp"
-        android:layout_height="130dp"
+        android:layout_height="110dp"
         android:background="@drawable/rect_grey"
         android:layout_below="@id/textHead"
         android:layout_marginTop="20dp"
@@ -21,7 +21,7 @@
     <ImageView
         android:id="@+id/backest"
         android:layout_width="300dp"
-        android:layout_height="130dp"
+        android:layout_height="110dp"
         android:background="@drawable/rect_grey"
         android:layout_below="@id/backouest"
         android:layout_marginTop="20dp"
@@ -31,7 +31,7 @@
     <ImageView
         android:id="@+id/backouest"
         android:layout_width="300dp"
-        android:layout_height="130dp"
+        android:layout_height="110dp"
         android:background="@drawable/rect_grey1"
         android:layout_below="@id/backnord"
         android:layout_marginTop="20dp"
@@ -40,7 +40,7 @@
     <ImageView
         android:id="@+id/backsud"
         android:layout_width="300dp"
-        android:layout_height="130dp"
+        android:layout_height="110dp"
         android:background="@drawable/rect_grey1"
         android:layout_below="@id/backest"
         android:layout_marginTop="20dp"
@@ -66,12 +66,12 @@
 
     <ImageView
         android:id="@+id/imgN"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
         android:layout_alignTop="@id/backnord"
         android:layout_alignLeft="@id/backnord"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
         app:srcCompat="@drawable/nord"
         tools:ignore="VectorDrawableCompat" />
     <TextView
@@ -91,12 +91,12 @@
 
     <ImageView
         android:id="@+id/imgE"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
         android:layout_alignTop="@id/backest"
         android:layout_alignLeft="@+id/backest"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         app:srcCompat="@drawable/est"
         tools:ignore="VectorDrawableCompat"
 
@@ -118,11 +118,11 @@
 
     <ImageView
         android:id="@+id/imgO"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
         android:layout_alignTop="@id/backouest"
         android:layout_alignRight="@+id/backouest"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:layout_marginRight="20dp"
 
 
@@ -148,14 +148,14 @@
 
     <ImageView
         android:id="@+id/imgS"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
 
         android:layout_alignTop="@id/backsud"
         android:layout_alignRight="@id/backsud"
         app:srcCompat="@drawable/sud"
         tools:ignore="VectorDrawableCompat"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:layout_marginRight="20dp"
         />
     <TextView
@@ -174,22 +174,33 @@
         />
 
     <!-- Commentaire -->
-
-
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
+        android:orientation="horizontal"
+        android:gravity="center"
         android:background="@color/blue1"
-        android:textColor="@color/yellow1"
-        android:fontFamily="@font/market_felt"
-        android:textSize="30dp"
-        android:text="Start"
-        android:padding="20dp"
-        android:onClick="showImg"
-        />
+        android:layout_alignParentBottom="true">
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/ic_baseline_inbox_24"/>
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/ic_baseline_home_24"/>
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/ic_baseline_next_week_24"/>
+
+    </LinearLayout>
+
+
+
 
 
 
