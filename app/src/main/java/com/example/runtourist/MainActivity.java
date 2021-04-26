@@ -12,7 +12,7 @@ import android.widget.Button;
 import android.view.View;
 import android.widget.TextView;
 
-public class MainActivity extends Activity{
+public class MainActivity extends AppCompatActivity{
     private ImageView imgN, imgE, imgO, imgS;
     private ImageView backN, backE, backO, backS;
     private TextView textN, textE, textO, textS;
@@ -33,7 +33,7 @@ public class MainActivity extends Activity{
         imgE = (ImageView) this.findViewById(R.id.imgE);
         imgO = (ImageView) this.findViewById(R.id.imgO);
         imgS = (ImageView) this.findViewById(R.id.imgS);
-        button1 = (Button) this.findViewById(R.id.button1);
+
         //Constructeur qui recupere les id des imageView mais ici leurs fond
         backN = (ImageView) this.findViewById(R.id.backnord);
         backE = (ImageView) this.findViewById(R.id.backest);
@@ -44,15 +44,6 @@ public class MainActivity extends Activity{
         textE = (TextView) this.findViewById(R.id.textE);
         textO = (TextView) this.findViewById(R.id.textO);
         textS = (TextView) this.findViewById(R.id.textS);
-        //Met en invisible pour lorque l'utilisateur appuye sur Start demarre l'appli
-        backN.setVisibility(View.INVISIBLE);
-        backE.setVisibility(View.INVISIBLE);
-        backO.setVisibility(View.INVISIBLE);
-        backS.setVisibility(View.INVISIBLE);
-        textN.setVisibility(View.INVISIBLE);
-        textE.setVisibility(View.INVISIBLE);
-        textO.setVisibility(View.INVISIBLE);
-        textS.setVisibility(View.INVISIBLE);
 
         context=this;
         
@@ -64,15 +55,7 @@ public class MainActivity extends Activity{
         imgE.setImageResource(R.drawable.est);
         imgO.setImageResource(R.drawable.ouest);
         imgS.setImageResource(R.drawable.sud);
-        button1.setVisibility(View.INVISIBLE);
-        backN.setVisibility(View.VISIBLE);
-        backE.setVisibility(View.VISIBLE);
-        backO.setVisibility(View.VISIBLE);
-        backS.setVisibility(View.VISIBLE);
-        textN.setVisibility(View.VISIBLE);
-        textE.setVisibility(View.VISIBLE);
-        textO.setVisibility(View.VISIBLE);
-        textS.setVisibility(View.VISIBLE);
+
     }
     //fonction activer lorsque l'utilisateur clique sur le nord
     public void pageNord(View view){
