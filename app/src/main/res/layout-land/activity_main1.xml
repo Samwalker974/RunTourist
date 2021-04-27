@@ -197,7 +197,7 @@
         <ImageView
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:background="@drawable/ic_baseline_next_week_2"/>
+            android:background="@drawable/ic_baseline_next_week_24"/>
 
     </LinearLayout>
 

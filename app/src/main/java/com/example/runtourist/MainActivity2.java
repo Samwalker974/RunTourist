@@ -1,51 +1,58 @@
 package com.example.runtourist;
 
+import android.content.Context;
 import android.content.Intent;
-import android.graphics.Color;
+import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.google.android.gms.tasks.OnFailureListener;
-import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.firebase.storage.FirebaseStorage;
-import com.bumptech.glide.Glide;
-import com.google.firebase.storage.StorageReference;
-import com.squareup.picasso.Picasso;
+import com.example.runtourist.base.MyData;
+
 
 //Cette activité est afficher quand l'utilisateur appuye sur Nord(Seulement pout le moment)
 public class MainActivity2 extends AppCompatActivity {
+    //Les Elements présent dans le Xml(soit affichage)
     private ListView list;
+    private ImageView imgBack;
+    private Context context;
+    private TextView texteH;
+    //Creation des celules servant a l'affichage selon chaque Cardinalité
     private MyCell[] mesCell;
     private int nbreCell;
     private AffMyCell affMyCell;
-    private FirebaseStorage storage;
-    private StorageReference myStorageRef;
-    private ImageView imgBack;
-
+    //
     private int lieux;
     private  Intent intent;
+    //Ma base de donnee et de mes donne stocker dans un tableau
+    private MyData maBase;
+    private MyCell[] mesDonnes;
 
-    private ImageView petite;
-    StorageReference ref;
 
     @Override
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list);
+        //Affectation des id afficher sur l'ecran
         list=findViewById(R.id.listA);
-        storage = FirebaseStorage.getInstance();
-        myStorageRef = FirebaseStorage.getInstance().getReference();
         imgBack = findViewById(R.id.imgBack);
-        //downloadMyFiles();
+        texteH = findViewById(R.id.textH2);
+        //Definition context et intent pour changer de vue ou autre
+        context = this;
         intent = getIntent();
+        //Appelle de ma base de donnee
+        maBase = new MyData(context);
         //Lancement du choix de la vue
         choixDeMaVue();
         //Remplis la la liste de cellule
@@ -53,24 +60,38 @@ public class MainActivity2 extends AppCompatActivity {
         affMyCell=new AffMyCell(this,mesCell);
         //Envois ensuite tout dans la listView pour afficher
         list.setAdapter(affMyCell);
-    }
-    //Utiliser pour Firebase mais ne marche pas
-    public void downloadMyFiles(){
-      ref = myStorageRef.child("/tree.jpg");
 
-      ref.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
-          @Override
-          public void onSuccess(Uri uri) {
-              Picasso.with(getApplicationContext()).load(ref.toString()).into(imgBack);
-              Toast.makeText(getApplicationContext(),"Telechargement Reussi",Toast.LENGTH_LONG).show();
-          }
-      }).addOnFailureListener(new OnFailureListener() {
-          @Override
-          public void onFailure(@NonNull Exception e) {
-              Toast.makeText(getApplicationContext(),"Telechargement Echouer "+ref.toString(),Toast.LENGTH_LONG).show();
-          }
-      });
+        //Ici on ecoute l'utilisateur appuyer longtemps su un lieux pour l'ajouter dans ses favoris
+        list.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+            @Override
+            public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
+
+                mesDonnes = maBase.getData();
+                //test du doublon avant ajout
+                if(mesDonnes.length!=0) {
+                    if (pasDeDoublon(mesDonnes, mesCell[position])) {
+                        //Ajout a ma base
+                        maBase.addIN(mesCell[position].getIdLieux(), mesCell[position].getIdTextInfo(), mesCell[position].getIdImgC());
+                        Toast.makeText(context, "Ajout de l'element comme préferer", Toast.LENGTH_SHORT).show();
+                        //Mise a jour de mes données
+
+                        mesDonnes = maBase.getData();
+
+                    } else {
+                        Toast.makeText(context, "Deja ajouter dans ma liste favorite", Toast.LENGTH_SHORT).show();
+                    }
+                }else{
+                    maBase.addIN(mesCell[position].getIdLieux(),mesCell[position].getIdTextInfo(),mesCell[position].getIdImgC());
+                    Toast.makeText(context,"Ajout de l'element comme préferer",Toast.LENGTH_SHORT).show();
+                }
+
+
+                return true;
+            }
+        });
+
     }
+
     //Donnee de la page Est
      public void donneEst(){
          mesCell= new MyCell[3];
@@ -87,21 +108,44 @@ public class MainActivity2 extends AppCompatActivity {
         mesCell[1]=new MyCell(R.string.jardin_etat,R.string.info_jardin_etat,R.drawable.jardin_de_letat1);
         mesCell[2]=new MyCell(R.string.roche_ecrite ,R.string.info_c_roche_ecrite,R.drawable.roche_ecrite1);
 
+
      }
     //Choix de la vue selon ce que l'utlisateur a choisi
      public void choixDeMaVue(){
          lieux = intent.getIntExtra("Lieux",0);
          if(lieux == 1){
             donneNord();
-
+            texteH.setText("Lieux : Nord");
          }
          if(lieux == 2){
              donneEst();
+             texteH.setText("Lieux : Est");
          }
 
      }
+    public void lieuxMenuH2(View v){
+        Intent intent =new Intent(context,MainAccueil.class);
+        startActivity(intent);
+    }
+    public void lieuxMenuV2(View v){
+        Intent intent =new Intent(context,MainActivity.class);
+        startActivity(intent);
+    }
 
 
+   public boolean pasDeDoublon(MyCell[] listeMc,MyCell macell){
+        boolean rep = true;
+        //on recherche un doublon si on trouve la fontion renvois false
+       Log.i("calen",listeMc.length+" ");
+        for(int i = 0;i < listeMc.length;i++){
+            Log.i("camar",i+" ");
+            if(listeMc[i].getIdLieux() == macell.getIdLieux()){
+                Log.i("camar",i+" ");
+                rep = false;
+            }
+        }
+        return rep;
+    }
 
 
 

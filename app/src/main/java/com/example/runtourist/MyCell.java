@@ -10,41 +10,13 @@ public class MyCell {
     private int idTextInfo;
     private int idImgC;
 
-    public MyCell(String nomLieux, String textInfo, int imgC){
-        setImgC(imgC);
-        setNomLieux(nomLieux);
-        setTextInfo(textInfo);
-    }
+
     public MyCell(int idLieux, int idTextInfo, int idImgC){
         setIdImgC(idImgC);
         setIdLieux(idLieux);
         setIdTextInfo(idTextInfo);
     }
 
-
-    public String getNomLieux() {
-        return nomLieux;
-    }
-
-    public void setNomLieux(String nomLieux) {
-        this.nomLieux = nomLieux;
-    }
-
-    public String getTextInfo() {
-        return textInfo;
-    }
-
-    public void setTextInfo(String textInfo) {
-        this.textInfo = textInfo;
-    }
-
-    public int getImgC() {
-        return imgC;
-    }
-
-    public void setImgC(int imgC) {
-        this.imgC = imgC;
-    }
 
     public int getIdLieux() {
         return idLieux;

@@ -50,17 +50,19 @@
         <ImageView
             android:layout_width="80dp"
             android:layout_height="80dp"
+
             android:background="@drawable/ic_baseline_inbox_24"/>
         <ImageView
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:layout_gravity="center"
             android:layout_marginRight="50dp"
+
             android:layout_marginLeft="50dp"
-            android:background="@drawable/ic_baseline_home_24"/>
+            android:background="@drawable/ic_baseline_home_2"/>
         <ImageView
             android:layout_width="80dp"
             android:layout_height="80dp"
+            android:onClick="lieuxMenuV"
             android:background="@drawable/ic_baseline_next_week_24"/>
 
     </LinearLayout>
