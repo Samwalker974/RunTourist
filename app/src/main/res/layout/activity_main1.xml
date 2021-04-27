@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".affichage.MainActivity"
     android:background="@drawable/trees1">
 
     <ImageView
@@ -184,7 +184,7 @@
         <ImageView
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:onClick="lieuxMenuH1"
+            android:onClick="lieuxFavoris1"
             android:background="@drawable/ic_baseline_inbox_24"/>
         <ImageView
             android:layout_width="80dp"
@@ -200,14 +200,4 @@
             android:background="@drawable/ic_baseline_next_week_2"/>
 
     </LinearLayout>
-
-
-
-
-
-
-
-
-
-
 </RelativeLayout>

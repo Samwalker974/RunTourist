@@ -1,4 +1,4 @@
-package com.example.runtourist;
+package com.example.runtourist.controller;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -10,6 +10,9 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 
+import com.example.runtourist.R;
+import com.example.runtourist.controller.MyCell;
+
 //Affiche les cellules selon les donnée de MyCell
 //Les donnee sont une image, un texte donnant le Nom du Lieux et un autre etant les information de ce lieux
 public class AffMyCell extends ArrayAdapter<MyCell> {
@@ -18,7 +21,7 @@ public class AffMyCell extends ArrayAdapter<MyCell> {
 
     //Methode pour implementer la lecture de ma Liste de Celule
     public AffMyCell(@NonNull Context context, MyCell[] listeCell) {
-        super(context,R.layout.cell_list, listeCell);
+        super(context, R.layout.cell_list, listeCell);
         this.context=context;
 
     }

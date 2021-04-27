@@ -1,4 +1,4 @@
-package com.example.runtourist;
+package com.example.runtourist.controller;
 
 //Ici ma classe MyCell contient les donnee suivante
 //Nom du lieux ,Information a propos de ce lieux, Image associe a celui ci

@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/pagefavoris">
+    >
 
     <TextView
-        android:id="@+id/accueil"
+        android:id="@+id/fav"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
@@ -14,20 +16,66 @@
         android:layout_alignParentTop="true"
         android:textColor="@color/grey"
         android:text="Mes Favoris"/>
+    <LinearLayout
+        android:id="@+id/sup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fav"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="30dp"
+        android:orientation="horizontal">
+         <TextView
+             android:fontFamily="@font/market_felt"
+             android:textSize="20dp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Supprimer"
+            />
+        <Switch
+            android:id="@+id/suppChoice"
+            android:checked="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+        />
+    </LinearLayout>
+    <Button
+        android:id="@+id/suppAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/nav"
+        android:onClick="clickSuppAll"
+        android:layout_centerHorizontal="true"
+        android:text="Vider mes favoris"
+        />
+    <TextView
+        android:id="@+id/infoUtil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/sup"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/market_felt"
+        android:textSize="30dp"
+        android:layout_marginLeft="50dp"
+        android:visibility="invisible"
+        android:text="Malheuresement ta liste de Favoris est vide vas en ajouter de nouveau"/>
 
     <ListView
-        android:id="@+id/listA"
-        android:layout_width="wrap_content"
-        android:layout_height="359dp"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
+        android:id="@+id/listFav"
 
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="150dp"
-        android:layout_marginRight="26dp"
-        android:layout_marginBottom="99dp" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/sup"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/suppAll"
+        android:layout_marginBottom="60dp"
+        android:layout_marginRight="41dp" />
 
     <LinearLayout
+        android:id="@+id/nav"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -37,19 +85,18 @@
         <ImageView
             android:layout_width="80dp"
             android:layout_height="80dp"
-
-            android:background="@drawable/ic_baseline_inbox_24"/>
+            android:background="@drawable/ic_baseline_inbox_2"/>
         <ImageView
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_marginRight="50dp"
-
+            android:onClick="lieuxHomeV3"
             android:layout_marginLeft="50dp"
-            android:background="@drawable/ic_baseline_home_2"/>
+            android:background="@drawable/ic_baseline_home_24"/>
         <ImageView
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:onClick="lieuxMenuV"
+            android:onClick="lieuxMenuV3"
             android:background="@drawable/ic_baseline_next_week_24"/>
 
     </LinearLayout>

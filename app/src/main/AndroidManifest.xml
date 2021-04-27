@@ -9,20 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.RunTourist">
-
-        <activity android:name=".MainActivity" android:theme="@style/Theme.RunTourist.NoActionBar">
-        </activity>
-        <activity android:name=".MainActivity2">
-
-        <activity android:name=".MainFavoris" android:theme="@style/Theme.RunTourist.NoActionBar">
-        </activity>
-        </activity>
-        <activity android:name=".MainAccueil">
+        <activity android:name=".affichage.MainAccueil" android:theme="@style/Theme.RunTourist.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".affichage.MainActivity"/>
+        <activity android:name=".affichage.MainActivity2"/>
+        <activity android:name=".affichage.MainFavoris"/>
 
     </application>
 

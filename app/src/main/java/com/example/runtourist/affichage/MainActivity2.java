@@ -1,9 +1,7 @@
-package com.example.runtourist;
+package com.example.runtourist.affichage;
 
 import android.content.Context;
 import android.content.Intent;
-import android.database.Cursor;
-import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -13,11 +11,12 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.annotation.NonNull;
-
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.runtourist.base.MyData;
+import com.example.runtourist.R;
+import com.example.runtourist.baseDonne.MyData;
+import com.example.runtourist.controller.AffMyCell;
+import com.example.runtourist.controller.MyCell;
 
 
 //Cette activité est afficher quand l'utilisateur appuye sur Nord(Seulement pout le moment)
@@ -60,12 +59,10 @@ public class MainActivity2 extends AppCompatActivity {
         affMyCell=new AffMyCell(this,mesCell);
         //Envois ensuite tout dans la listView pour afficher
         list.setAdapter(affMyCell);
-
         //Ici on ecoute l'utilisateur appuyer longtemps su un lieux pour l'ajouter dans ses favoris
         list.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
             public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
-
                 mesDonnes = maBase.getData();
                 //test du doublon avant ajout
                 if(mesDonnes.length!=0) {
@@ -74,7 +71,6 @@ public class MainActivity2 extends AppCompatActivity {
                         maBase.addIN(mesCell[position].getIdLieux(), mesCell[position].getIdTextInfo(), mesCell[position].getIdImgC());
                         Toast.makeText(context, "Ajout de l'element comme préferer", Toast.LENGTH_SHORT).show();
                         //Mise a jour de mes données
-
                         mesDonnes = maBase.getData();
 
                     } else {
@@ -84,14 +80,10 @@ public class MainActivity2 extends AppCompatActivity {
                     maBase.addIN(mesCell[position].getIdLieux(),mesCell[position].getIdTextInfo(),mesCell[position].getIdImgC());
                     Toast.makeText(context,"Ajout de l'element comme préferer",Toast.LENGTH_SHORT).show();
                 }
-
-
                 return true;
             }
         });
-
     }
-
     //Donnee de la page Est
      public void donneEst(){
          mesCell= new MyCell[3];
@@ -123,12 +115,13 @@ public class MainActivity2 extends AppCompatActivity {
          }
 
      }
+
     public void lieuxMenuH2(View v){
-        Intent intent =new Intent(context,MainAccueil.class);
+        Intent intent =new Intent(context, MainAccueil.class);
         startActivity(intent);
     }
-    public void lieuxMenuV2(View v){
-        Intent intent =new Intent(context,MainActivity.class);
+    public void lieuxFavoris2(View v){
+        Intent intent =new Intent(context,MainFavoris.class);
         startActivity(intent);
     }
 

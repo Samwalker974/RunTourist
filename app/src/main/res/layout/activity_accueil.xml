@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent"
-    android:background="@drawable/backgroundacceuil">
+    >
 
     <TextView
         android:id="@+id/accueil"
@@ -18,7 +18,7 @@
         android:id="@+id/lieuxVbt"
         android:layout_width="130dp"
         android:layout_height="130dp"
-        android:text="Lieux a Visiter"
+        android:text="Lieux Favorite"
         android:textColor="@color/yellow1"
         android:fontFamily="@font/market_felt"
         android:layout_below="@id/accueil"
@@ -26,20 +26,21 @@
         android:layout_alignParentLeft="true"
         android:layout_marginLeft="30dp"
         android:textSize="20dp"
-        android:onClick="lieuxV"
+        android:onClick="lieuxFavoris"
         android:background="@drawable/round_bo"/>
     <Button
         android:id="@+id/lieuxFbt"
         android:layout_width="130dp"
         android:layout_height="130dp"
-        android:text="Lieux Favorite"
+        android:text="Lieux a Visiter"
+
         android:textSize="20dp"
         android:layout_alignParentRight="true"
         android:layout_centerInParent="true"
         android:layout_marginRight="30dp"
         android:textColor="@color/yellow1"
         android:fontFamily="@font/market_felt"
-        android:onClick="lieuxF"
+        android:onClick="lieuxMenuV"
         android:background="@drawable/round_bo"/>
 
     <LinearLayout
@@ -52,7 +53,7 @@
         <ImageView
             android:layout_width="80dp"
             android:layout_height="80dp"
-
+            android:onClick="lieuxFavoris"
             android:background="@drawable/ic_baseline_inbox_24"/>
         <ImageView
             android:layout_width="80dp"

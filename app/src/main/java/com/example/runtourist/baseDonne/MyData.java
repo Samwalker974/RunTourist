@@ -1,16 +1,12 @@
-package com.example.runtourist.base;
+package com.example.runtourist.baseDonne;
 
-import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
-import android.widget.Toast;
 
-import androidx.annotation.Nullable;
-
-import com.example.runtourist.MyCell;
+import com.example.runtourist.controller.MyCell;
 
 public class MyData extends SQLiteOpenHelper {
 
@@ -60,10 +56,10 @@ public class MyData extends SQLiteOpenHelper {
         String query = " select * from my_table";
         // Cusor data pour parcourir la table
         Cursor data = this.getWritableDatabase().rawQuery(query,null);
-        Log.i("ici","Ajout dans ma base de donnee");
+
         //Creation d'une celule
         MyCell[] cells = new MyCell[data.getCount()];
-        Log.i("ici1","Ajout dans ma base de donnee"+data.getColumnCount());
+
         int i = 0;
         data.moveToFirst();
 

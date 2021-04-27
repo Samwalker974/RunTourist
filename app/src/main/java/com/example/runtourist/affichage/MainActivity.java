@@ -1,9 +1,7 @@
-package com.example.runtourist;
+package com.example.runtourist.affichage;
 
-import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,6 +9,8 @@ import android.widget.ImageView;
 import android.widget.Button;
 import android.view.View;
 import android.widget.TextView;
+
+import com.example.runtourist.R;
 
 public class MainActivity extends AppCompatActivity{
     private ImageView imgN, imgE, imgO, imgS;
@@ -75,11 +75,11 @@ public class MainActivity extends AppCompatActivity{
         startActivity(intent);
     }
     public void lieuxMenuH1(View v){
-        Intent intent =new Intent(context,MainAccueil.class);
+        Intent intent =new Intent(context, MainAccueil.class);
         startActivity(intent);
     }
-    public void lieuxMenuV1(View v){
-        Intent intent =new Intent(context,MainActivity.class);
+    public void lieuxFavoris1(View v){
+        Intent intent =new Intent(context,MainFavoris.class);
         startActivity(intent);
     }
 

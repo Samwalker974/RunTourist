@@ -1,8 +1,8 @@
-package com.example.runtourist.base;
+package com.example.runtourist.baseDonne;
 
 import android.content.Context;
 import android.database.sqlite.*;
-import android.util.Log;
+
 import androidx.annotation.Nullable;
 
 public class AllMyCells extends SQLiteOpenHelper {
