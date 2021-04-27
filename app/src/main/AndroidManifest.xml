@@ -14,6 +14,8 @@
         </activity>
         <activity android:name=".MainActivity2">
 
+        <activity android:name=".MainFavoris" android:theme="@style/Theme.RunTourist.NoActionBar">
+        </activity>
         </activity>
         <activity android:name=".MainAccueil">
             <intent-filter>

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent"
-    android:background="@drawable/backgroundacceuil">
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pagefavoris">
 
     <TextView
         android:id="@+id/accueil"
@@ -12,35 +13,19 @@
         android:textSize="30dp"
         android:layout_alignParentTop="true"
         android:textColor="@color/grey"
-        android:text="Accueil"/>
+        android:text="Mes Favoris"/>
 
-    <Button
-        android:id="@+id/lieuxVbt"
-        android:layout_width="130dp"
-        android:layout_height="130dp"
-        android:text="Lieux a Visiter"
-        android:textColor="@color/yellow1"
-        android:fontFamily="@font/market_felt"
-        android:layout_below="@id/accueil"
-        android:layout_marginTop="50dp"
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="30dp"
-        android:textSize="20dp"
-        android:onClick="lieuxV"
-        android:background="@drawable/round_bo"/>
-    <Button
-        android:id="@+id/lieuxFbt"
-        android:layout_width="130dp"
-        android:layout_height="130dp"
-        android:text="Lieux Favorite"
-        android:textSize="20dp"
+    <ListView
+        android:id="@+id/listA"
+        android:layout_width="wrap_content"
+        android:layout_height="359dp"
         android:layout_alignParentRight="true"
-        android:layout_centerInParent="true"
-        android:layout_marginRight="30dp"
-        android:textColor="@color/yellow1"
-        android:fontFamily="@font/market_felt"
-        android:onClick="lieuxF"
-        android:background="@drawable/round_bo"/>
+        android:layout_alignParentBottom="true"
+
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginRight="26dp"
+        android:layout_marginBottom="99dp" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -69,6 +54,4 @@
 
     </LinearLayout>
 
-
-
-</RelativeLayout>
+    </RelativeLayout>

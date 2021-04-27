@@ -10,10 +10,10 @@
     <ImageView
         android:id="@+id/backnord"
         android:layout_width="300dp"
-        android:layout_height="110dp"
+        android:layout_height="60dp"
         android:background="@drawable/rect_grey"
         android:layout_below="@id/textHead"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:layout_alignParentRight="true"
         android:onClick="pageNord"
         />
@@ -21,29 +21,29 @@
     <ImageView
         android:id="@+id/backest"
         android:layout_width="300dp"
-        android:layout_height="110dp"
+        android:layout_height="60dp"
         android:background="@drawable/rect_grey"
         android:layout_below="@id/backouest"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:layout_alignParentRight="true"
         android:onClick="pageEst"
         />
     <ImageView
         android:id="@+id/backouest"
         android:layout_width="300dp"
-        android:layout_height="110dp"
+        android:layout_height="60dp"
         android:background="@drawable/rect_grey1"
         android:layout_below="@id/backnord"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:layout_alignParentLeft="true"
         />
     <ImageView
         android:id="@+id/backsud"
         android:layout_width="300dp"
-        android:layout_height="110dp"
+        android:layout_height="60dp"
         android:background="@drawable/rect_grey1"
         android:layout_below="@id/backest"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:layout_alignParentLeft="true"
         />
 
@@ -66,8 +66,8 @@
 
     <ImageView
         android:id="@+id/imgN"
-        android:layout_width="90dp"
-        android:layout_height="90dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:layout_alignTop="@id/backnord"
         android:layout_alignLeft="@id/backnord"
         android:layout_marginLeft="15dp"
@@ -91,8 +91,8 @@
 
     <ImageView
         android:id="@+id/imgE"
-        android:layout_width="90dp"
-        android:layout_height="90dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:layout_alignTop="@id/backest"
         android:layout_alignLeft="@+id/backest"
         android:layout_marginLeft="20dp"
@@ -118,8 +118,8 @@
 
     <ImageView
         android:id="@+id/imgO"
-        android:layout_width="90dp"
-        android:layout_height="90dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:layout_alignTop="@id/backouest"
         android:layout_alignRight="@+id/backouest"
         android:layout_marginTop="10dp"
@@ -148,8 +148,8 @@
 
     <ImageView
         android:id="@+id/imgS"
-        android:layout_width="90dp"
-        android:layout_height="90dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
 
         android:layout_alignTop="@id/backsud"
         android:layout_alignRight="@id/backsud"
@@ -176,27 +176,27 @@
     <!-- Commentaire -->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:orientation="horizontal"
         android:gravity="center"
         android:background="@color/blue1"
         android:layout_alignParentBottom="true">
         <ImageView
-            android:layout_width="80dp"
-            android:layout_height="80dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:onClick="lieuxMenuH1"
             android:background="@drawable/ic_baseline_inbox_24"/>
         <ImageView
-            android:layout_width="80dp"
-            android:layout_height="80dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:layout_gravity="center"
             android:layout_marginRight="50dp"
             android:layout_marginLeft="50dp"
             android:onClick="lieuxMenuH1"
             android:background="@drawable/ic_baseline_home_24"/>
         <ImageView
-            android:layout_width="80dp"
-            android:layout_height="80dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:background="@drawable/ic_baseline_next_week_24"/>
 
     </LinearLayout>
