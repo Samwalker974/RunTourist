@@ -36,6 +36,7 @@
         android:layout_below="@id/backnord"
         android:layout_marginTop="20dp"
         android:layout_alignParentLeft="true"
+        android:onClick="pageOuest"
         />
 
     <ImageView
@@ -44,7 +45,7 @@
         android:layout_height="110dp"
         android:layout_below="@id/backest"
         android:layout_alignParentLeft="true"
-
+        android:onClick="pageSud"
         android:layout_marginTop="20dp"
         android:background="@drawable/rect_grey1" />
 

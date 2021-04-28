@@ -86,7 +86,7 @@ public class MainActivity2 extends AppCompatActivity {
     }
     //Donnee de la page Est
      public void donneEst(){
-         mesCell= new MyCell[4];
+         mesCell= new MyCell[5];
          nbreCell=5;
          mesCell[0]=new MyCell(R.string.bassin_la_paix,R.string.info_bassin_la_paix, R.drawable.bassinlapaix1);
          mesCell[1]=new MyCell(R.string.plaine_sable,R.string.info_plaine_sable,R.drawable.plainedessables1);
@@ -96,7 +96,7 @@ public class MainActivity2 extends AppCompatActivity {
      }
      //Donnee de la page Nord
      public void donneNord(){
-        mesCell= new MyCell[4];
+        mesCell= new MyCell[5];
         nbreCell=5;
         mesCell[0]=new MyCell(R.string.cascade_niagara,R.string.info_cascade_niagara, R.drawable.cascade_niagara1);
         mesCell[1]=new MyCell(R.string.jardin_etat,R.string.info_jardin_etat,R.drawable.jardin_de_letat1);
@@ -107,7 +107,7 @@ public class MainActivity2 extends AppCompatActivity {
 
     //Donnee de la page Ouest
     public void donneOuest(){
-        mesCell= new MyCell[4];
+        mesCell= new MyCell[5];
         nbreCell=5;
         mesCell[0]=new MyCell(R.string.aquarium_de_la_reunion,R.string.info_aquarium_de_la_reunion, R.drawable.aquariumdelareunion1);
         mesCell[1]=new MyCell(R.string.bassin_cormoran,R.string.info_bassin_cormoran,R.drawable.bassincomoran1);
@@ -118,7 +118,7 @@ public class MainActivity2 extends AppCompatActivity {
 
     //Donnee de la page Ouest
     public void donneSud(){
-        mesCell= new MyCell[4];
+        mesCell= new MyCell[5];
         nbreCell=5;
         mesCell[0]=new MyCell(R.string.cap_mechant,R.string.info_cap_mechant, R.drawable.capmechant1);
         mesCell[1]=new MyCell(R.string.cascade_langevin,R.string.info_cascade_langevin,R.drawable.cascadelangevin1);
