@@ -27,17 +27,75 @@
     <string name="info_plaine_sable">La route qui conduit au piton de la Fournaise traverse un paysage totalement lunaire : la plaine des Sables, étendue de scories et de roches volcaniques à plus de 2 000 mètres d’altitude.</string>
     <string name="info_c_plaine_sable">Un univers lunaire d’une beauté irréelle qui vous amène jusqu’au Pas de Bellecombe.La Plaine des Sables est une vaste étendue lunaire aux reflets mordorés et rougeâtres. Elle est délimitée par le rempart des Sables et le rempart du pas de Bellecombe.Une table d’orientation dénomme l’ensemble de ces curiosités naturelles.</string>
 
+    <string name="notre_dame_des_laves"> Notre Dame Des Laves </string>
+    <string name="info_notre_dame_des_laves"> Eglise situé au Piton Sainte-Rose entouré par couches de parois rocheuse provenant de coulés de lave.  </string>
+    <string name="info_c_notre_dame_des_laves"> L\'histoire raconte qu\'elle fut encerclé miraculeusement par des coulés de lave lors de l\'érupution du Piton de la Fournaise </string>
+
+    <string name="piton_de_la_fournaise"> Piton de la Fournaise </string>
+    <string name="info_piton_de_la_fournaise"> Le site le plus visité de l\'île un volcan qu\'on peut apercevoir sa silouette malgré sa couronne de nuage sur sa tête, bien massif avec 2.631 mètres d\'altitudes.. </string>
+    <string name="info_c_piton_de_la_fournaise"> Une moyenne d\'une éruption tout les 9 mois faisant de lui l\'un des volcans les plus actifs au monde </string>
+
+
     <string name="cascade_niagara">La Cascade Niagara</string>
-    <string name="info_cascade_niagara"></string>
-    <string name="info_c_cascade_niagara"></string>
+    <string name="info_cascade_niagara"> Cascade emblématique, situé à deux kilometres du centre ville de Sainte Suzanne 100 mètres d\'altitude dispose d'un chemin libre d'accès </string>
+    <string name="info_c_cascade_niagara"> Positionnée sur un site calme et verdoyant au millieu de canne à sucre , elle assure un spectacle grandiose  avec une vue sur le large bassin</string>
     
     <string name="jardin_etat">Le Jardin de L\'Etat</string>
-    <string name="info_jardin_etat"></string>
-    <string name="info_c_jardin_etat"></string>
+    <string name="info_jardin_etat">Anciennement appelé Jardin de Roy, servant de jardin en 1773 il abrite un Musée d\'histoire naturelle la visite faisant l\'occasion de découvrir de nombreux arbres exotiques </string>
+    <string name="info_c_jardin_etat">Le site dispose d\'une aire de jeu muni de jets d\'eau et d\'éclairage, un espace dédié aux exposition et aux arts disponible. </string>
 
     <string name="roche_ecrite">La Roche Ecrite</string>
     <string name="info_roche_ecrite"></string>
     <string name="info_c_roche_ecrite"></string>
 
+    <string name="parc_du_colorado"> Parc du Colorado </string>
+    <string name="info_parc_du_colorado"> Grand espace naturel de l\'île, situé au sommet de la commune de la Montagne a environ 650 mètres d'altitudes</string>
+    <string name="info_c_parc_du_colorado"> Dispose d\'aires de jeux puis est l\'un des point de depart pour la randonnée a pied ou a cheval  </string>
+
+    <string name="vanilleraie"> Vanilleraie </string>
+    <string name="info_vanilleraie"> Situé au coeur d\'un domaine creole authentique du Grand Hazier à Sainte Suzanne, on y cultive de la vanille bourbon artisanale, decouvert par Edmond Albius, un jeune esclave originaire de la commune. </string>
+    <string name="info_c_vanilleraie"> Il possède un magasin intérieur vendant des produit locaux et un mini musee sur les produit locaux,  </string>
+
+
+    <string name="aquarium_de_la_reunion"> Aquarium de la Reunion </string>
+    <string name="info_aquarium_de_la_reunion"> Aquarium privé au centre du port de plaisance de Saint-Gilles on y retrouve une diversité de poissons. </string>
+    <string name="info_c_aquarium_de_la_reunion"> Le centre compte un magasin intérieur vendant des objets dérivés en rapport avec la mer, disposant 600 000 Litres d\'eau dans le complexe ainsi une variété de 700 poissons et 200 especes de la vie récifale locale. </string>
+
+    <string name="bassin_cormoran"> Bassin Comoran </string>
+    <string name="info_bassin_cormoran"> Point d\'eau alimenté par une cascade, situé a Saint Gilles, l\'endroit est facile d'accès dependant de la météo. </string>
+    <string name="info_c_bassin_cormoran"> Pouvant etre considerer comme l\'un des meilleurs spots de plongée de l\'île, de nombreux fixation métallique present pour des sports verticaux. </string>
+
+    <string name="cirque_de_mafate"> Cirque de Mafate </string>
+    <string name="info_cirque_de_mafate"> L\'un des trois grands cirques naturels massif du Piton des Neiges, géologiquement dessiner par des remparts qu\'ainsi une vue plongeante sur les crêtes voisines </string>
+    <string name="info_c_cirque_de_mafate"> Site s\'étirant sur 14 km et 7km, possedant aussi sa propre biodiversité découvrant de nombreux animaux a l\'état sauvages comme les chèvres et d\'autres especes </string>
+
+    <string name="kelonia"> Kelonia </string>
+    <string name="info_kelonia"> Centre sur la recherche et la protection des tortues marines ainsi que l\'environnement marine de l\'ile de la Reunion, acceuille et soigne les tortues blesser pour les relacher ensuite une fois guéri.  </string>
+    <string name="info_c_kelonia"> Le centre dispose d\'une boutique interieur avec des produit locaux autour des tortues ainsi d\'autre produit "eco-citoyen, on peut visité le centre découvrir les tortues et le monde qui leur entoure" </string>
+
+    <string name="maïdo"> Maïdo </string>
+    <string name="info_maïdo"> Sommet montagneux, culmine à environ 2200 mètres d\'altitues, site naturel offrant un paranoma remarquable sur le Cirque de Mafate </string>
+    <string name="info_c_maïdo"> Site apprécié par les pique-niqueurs, ainsi  que des randonneurs pédestres d'altitudes.</string>
+
+
+    <string name="cap_mechant"> Cap Mechant </string>
+    <string name="info_cap_mechant"> Site touristique très prisé, situé sur la côte sud ouest de Saint Philippe, il offre un paysage exceptionnel ainsi qu\'une vu sur la mer environnante </string>
+    <string name="info_c_cap_mechant"> Disposant de kiosques ou on peut admirer des falaises de laves couleurs charbon formé par des coulés de laves plongeant dans l\'océan </string>
+
+    <string name="cascade_langevin"> Cascade Langevin </string>
+    <string name="info_cascade_langevin"> Situé dans le sud sauvage, composé de plusieurs chutes d\'eau il est la plus fréquenté et la plus célèbre offre des spots pour pique niquer et se baigner. </string>
+    <string name="info_c_cascade_langevin"> Le lieu pouvant faire partiquer la randonnée normale ou aquatique ainsi que la pêche, possedant un large bassin d\'eau clair d'un bleu profond et froid. </string>
+
+    <string name="grand_anse"> Grand Anse </string>
+    <string name="info_grand_anse"> Lieu acceuillant une baie bordée de cocotiers et de lataniers avec un bassin connue pour sa plage corallienne très fréquenter.</string>
+    <string name="info_c_grand_anse"> Site possèdant un parc verdoyant, des aires de piques niques, des espaces verts, un grand parking et de nombreux camion bar pour se restorer </string>
+
+    <string name="piton_des_neiges"> Piton Des Neiges </string>
+    <string name="info_piton_des_neiges"> Un des volan de l\'île dans un état endormie, marque le sommet edifice volcanique à 3070 mètres d\'altitudes, on dit qu\'il est endormis depuis 12000 ans </string>
+    <string name="info_c_piton_des_neiges"> La légende raconte quand il fait froid a la réunion il pouvait acceuillir de la neige a son sommet ce qui est extremement rare. C\'est le volcan le plus massif de l'ile.  </string>
+
+    <string name="saga_du_rhum"> Saga du Rhum </string>
+    <string name="info_saga_du_rhum"> Site culturel et musée consacré a l\'histoire de la fabrication du rhum de la Réunion situé dans la commune de Saint Pierre </string>
+    <string name="info_c_saga_du_rhum"> Possède une boutique intérieur vendant des produits locaux, avec une diversité de 70 rhums, liqueurs, punchs. Dans un décor de case créole et d\'autres spécialités incontournable.   </string>
 
 </resources>

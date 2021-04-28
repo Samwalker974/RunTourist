@@ -86,22 +86,48 @@ public class MainActivity2 extends AppCompatActivity {
     }
     //Donnee de la page Est
      public void donneEst(){
-         mesCell= new MyCell[3];
-         nbreCell=3;
+         mesCell= new MyCell[4];
+         nbreCell=5;
          mesCell[0]=new MyCell(R.string.bassin_la_paix,R.string.info_bassin_la_paix, R.drawable.bassinlapaix1);
          mesCell[1]=new MyCell(R.string.plaine_sable,R.string.info_plaine_sable,R.drawable.plainedessables1);
          mesCell[2]=new MyCell(R.string.voile_mariee ,R.string.info_c_voile_mariee,R.drawable.voiledelamariee1);
+         mesCell[3]=new MyCell(R.string.notre_dame_des_laves,R.string.info_notre_dame_des_laves,R.drawable.notredamedeslaves1);
+         mesCell[4]=new MyCell(R.string.piton_de_la_fournaise,R.string.info_piton_de_la_fournaise,R.drawable.pitondelafournaise1);
      }
-     //Donne de la page Nord
+     //Donnee de la page Nord
      public void donneNord(){
-        mesCell= new MyCell[3];
-        nbreCell=3;
+        mesCell= new MyCell[4];
+        nbreCell=5;
         mesCell[0]=new MyCell(R.string.cascade_niagara,R.string.info_cascade_niagara, R.drawable.cascade_niagara1);
         mesCell[1]=new MyCell(R.string.jardin_etat,R.string.info_jardin_etat,R.drawable.jardin_de_letat1);
         mesCell[2]=new MyCell(R.string.roche_ecrite ,R.string.info_c_roche_ecrite,R.drawable.roche_ecrite1);
-
-
+        mesCell[3]=new MyCell(R.string.parc_du_colorado,R.string.info_parc_du_colorado,R.drawable.parc_du_colorado1);
+        mesCell[4]=new MyCell(R.string.vanilleraie,R.string.info_vanilleraie,R.drawable.vanilleraie1);
      }
+
+    //Donnee de la page Ouest
+    public void donneOuest(){
+        mesCell= new MyCell[4];
+        nbreCell=5;
+        mesCell[0]=new MyCell(R.string.aquarium_de_la_reunion,R.string.info_aquarium_de_la_reunion, R.drawable.aquariumdelareunion1);
+        mesCell[1]=new MyCell(R.string.bassin_cormoran,R.string.info_bassin_cormoran,R.drawable.bassincomoran1);
+        mesCell[2]=new MyCell(R.string.cirque_de_mafate ,R.string.info_cirque_de_mafate,R.drawable.cirquedemafate1);
+        mesCell[3]=new MyCell(R.string.kelonia,R.string.info_kelonia,R.drawable.kelonia1);
+        mesCell[4]=new MyCell(R.string.maïdo,R.string.info_maïdo,R.drawable.maido1);
+    }
+
+    //Donnee de la page Ouest
+    public void donneSud(){
+        mesCell= new MyCell[4];
+        nbreCell=5;
+        mesCell[0]=new MyCell(R.string.cap_mechant,R.string.info_cap_mechant, R.drawable.capmechant1);
+        mesCell[1]=new MyCell(R.string.cascade_langevin,R.string.info_cascade_langevin,R.drawable.cascadelangevin1);
+        mesCell[2]=new MyCell(R.string.grand_anse ,R.string.info_grand_anse,R.drawable.grandanse1);
+        mesCell[3]=new MyCell(R.string.piton_des_neiges,R.string.info_piton_des_neiges,R.drawable.pitondesneiges1);
+        mesCell[4]=new MyCell(R.string.saga_du_rhum,R.string.info_saga_du_rhum,R.drawable.sagadurhum1);
+    }
+
+
     //Choix de la vue selon ce que l'utlisateur a choisi
      public void choixDeMaVue(){
          lieux = intent.getIntExtra("Lieux",0);
@@ -112,6 +138,14 @@ public class MainActivity2 extends AppCompatActivity {
          if(lieux == 2){
              donneEst();
              texteH.setText("Lieux : Est");
+         }
+         if(lieux == 3){
+             donneOuest();
+             texteH.setText("Lieux : Ouest");
+         }
+         if(lieux == 4){
+             donneSud();
+             texteH.setText("Lieux : Sud");
          }
 
      }

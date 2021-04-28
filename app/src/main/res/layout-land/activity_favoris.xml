@@ -37,19 +37,19 @@
         android:layout_marginTop="40dp"
         android:layout_marginLeft="30dp"
         android:orientation="horizontal">
-         <TextView
-             android:fontFamily="@font/market_felt"
-             android:textSize="20dp"
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-             android:text="Supprimer"
+        <TextView
+            android:fontFamily="@font/market_felt"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Supprimer"
             />
         <Switch
             android:id="@+id/suppChoice"
             android:checked="false"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-        />
+            />
     </LinearLayout>
     <Button
         android:id="@+id/suppAll"
@@ -82,35 +82,35 @@
         android:layout_above="@id/suppAll"
         android:layout_below="@id/sup"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="48dp"
-        android:layout_marginRight="41dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="40dp"
         android:layout_marginBottom="62dp" />
 
     <LinearLayout
         android:id="@+id/nav"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:orientation="horizontal"
         android:gravity="center"
         android:background="@color/blue1"
         android:layout_alignParentBottom="true">
         <ImageView
-            android:layout_width="80dp"
-            android:layout_height="80dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:background="@drawable/ic_baseline_inbox_2"/>
         <ImageView
-            android:layout_width="80dp"
-            android:layout_height="80dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:layout_marginRight="50dp"
             android:onClick="lieuxHomeV3"
             android:layout_marginLeft="50dp"
             android:background="@drawable/ic_baseline_home_24"/>
         <ImageView
-            android:layout_width="80dp"
-            android:layout_height="80dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:onClick="lieuxMenuV3"
             android:background="@drawable/ic_baseline_next_week_24"/>
 
     </LinearLayout>
 
-    </RelativeLayout>
+</RelativeLayout>
