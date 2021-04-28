@@ -37,27 +37,28 @@
         android:layout_marginTop="20dp"
         android:layout_alignParentLeft="true"
         />
+
     <ImageView
         android:id="@+id/backsud"
         android:layout_width="300dp"
         android:layout_height="110dp"
-        android:background="@drawable/rect_grey1"
         android:layout_below="@id/backest"
-        android:layout_marginTop="20dp"
         android:layout_alignParentLeft="true"
-        />
+
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rect_grey1" />
 
 
     <TextView
         android:id="@+id/textHead"
         android:fontFamily="@font/market_felt"
-        android:background="@color/blue1"
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:padding="5dp"
         android:textAlignment="center"
-        android:textColor="@color/yellow1"
+        android:textColor="@color/grey"
         android:gravity="center"
         android:textSize="31dp"
         android:text="RunTourist"
@@ -175,6 +176,7 @@
 
     <!-- Commentaire -->
     <LinearLayout
+        android:id="@+id/bottomMenu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"

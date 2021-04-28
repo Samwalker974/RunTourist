@@ -54,12 +54,11 @@ public class MainFavoris extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 if(suppChoice.isChecked()){
-                    maBase.deleteData(position);
+                    maBase.deleteData(mesCellFav[position].getId());
                     maBase = new MyData(context);
                     mesCellFav = maBase.getData();
                     affMyCell = new AffMyCell(context, mesCellFav);
                     listF.setAdapter(affMyCell);
-                    Toast.makeText(context,"Supprimer"+position,Toast.LENGTH_SHORT).show();
                     if(mesCellFav.length == 0){
                         infoUtile.setVisibility(View.VISIBLE);
                     }

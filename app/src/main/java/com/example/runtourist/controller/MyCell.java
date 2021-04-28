@@ -5,12 +5,18 @@ package com.example.runtourist.controller;
 public class MyCell {
     private String nomLieux;
     private String textInfo;
-    private int imgC;
+    private int id;
     private int idLieux;
     private int idTextInfo;
     private int idImgC;
 
 
+    public MyCell(int id,int idLieux, int idTextInfo, int idImgC){
+        setIdImgC(idImgC);
+        setIdLieux(idLieux);
+        setIdTextInfo(idTextInfo);
+        setId(id);
+    }
     public MyCell(int idLieux, int idTextInfo, int idImgC){
         setIdImgC(idImgC);
         setIdLieux(idLieux);
@@ -40,5 +46,13 @@ public class MyCell {
 
     public void setIdTextInfo(int idTextInfo) {
         this.idTextInfo = idTextInfo;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 }

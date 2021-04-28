@@ -9,6 +9,7 @@
         android:id="@+id/imgBack"
         android:layout_height="match_parent"
         android:layout_width="match_parent"
+
         app:srcCompat="@drawable/river1"
         android:adjustViewBounds="true"
         android:scaleType="centerCrop"
@@ -22,8 +23,8 @@
         android:gravity="center"
         android:textSize="31dp"
         android:fontFamily="@font/market_felt"
-        android:textColor="@color/yellow1"
-        android:background="@color/blue1"
+        android:textColor="@color/white"
+
         android:text="RunTourist : Nord"/>
 
     <ImageView

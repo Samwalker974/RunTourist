@@ -73,7 +73,7 @@ public class MyData extends SQLiteOpenHelper {
             //Log.i("ik1",donne);
             //Log.i("ik2",donne);
             Log.i("iko",data.getString(0));
-            cells[i] = new MyCell(data.getInt(1),data.getInt(2),data.getInt(3));
+            cells[i] = new MyCell(data.getInt(0),data.getInt(1),data.getInt(2),data.getInt(3));
             i++;
 
         }
