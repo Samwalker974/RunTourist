@@ -72,11 +72,11 @@
         android:textSize="30dp"
         android:layout_marginLeft="50dp"
         android:visibility="invisible"
-        android:text="Malheuresement ta liste de Favoris est vide vas en ajouter de nouveau"/>
+        android:text="Malheureusement ta liste de favoris est vide vas en ajouter de nouveau"/>
 
     <ListView
         android:id="@+id/listFav"
-
+        android:scrollbars="horizontal|vertical"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@id/suppAll"

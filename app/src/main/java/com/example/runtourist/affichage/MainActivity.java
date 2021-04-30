@@ -9,7 +9,6 @@ import android.widget.ImageView;
 import android.widget.Button;
 import android.view.View;
 import android.widget.TextView;
-
 import com.example.runtourist.R;
 
 public class MainActivity extends AppCompatActivity{

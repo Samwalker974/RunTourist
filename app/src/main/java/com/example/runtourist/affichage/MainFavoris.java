@@ -12,6 +12,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.runtourist.R;
 import com.example.runtourist.baseDonne.MyData;
@@ -40,8 +42,10 @@ public class MainFavoris extends AppCompatActivity {
         infoUtile = findViewById(R.id.infoUtil);
         suppChoice = findViewById(R.id.suppChoice);
         context = this;
+
         maBase = new MyData(context);
         mesCellFav = maBase.getData();
+
 
         if(mesCellFav.length != 0 ) {
             affMyCell = new AffMyCell(context, mesCellFav);

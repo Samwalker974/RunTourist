@@ -9,7 +9,7 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/favtof"
+        android:background="@drawable/mountaineers_land"
         android:layout_alignParentLeft="true"
         android:layout_alignParentBottom="true"
         android:layout_alignParentTop="true"
@@ -34,22 +34,22 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/fav"
         android:layout_alignParentLeft="true"
-        android:layout_marginTop="40dp"
+
         android:layout_marginLeft="30dp"
         android:orientation="horizontal">
-        <TextView
-            android:fontFamily="@font/market_felt"
-            android:textSize="20dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Supprimer"
+         <TextView
+             android:fontFamily="@font/market_felt"
+             android:textSize="20dp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Supprimer"
             />
         <Switch
             android:id="@+id/suppChoice"
             android:checked="false"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            />
+        />
     </LinearLayout>
     <Button
         android:id="@+id/suppAll"
@@ -67,50 +67,51 @@
         android:gravity="center"
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/sup"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="20dp"
+
         android:fontFamily="@font/market_felt"
-        android:textSize="30dp"
+        android:textSize="25dp"
         android:layout_marginLeft="50dp"
-        android:visibility="invisible"
-        android:text="Malheuresement ta liste de Favoris est vide vas en ajouter de nouveau"/>
+
+        android:text="Malheureusement ta liste de favoris est vide vas en ajouter de nouveau"/>
 
     <ListView
         android:id="@+id/listFav"
-
+        android:scrollbars="horizontal|vertical"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@id/suppAll"
         android:layout_below="@id/sup"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
-        android:layout_marginRight="40dp"
-        android:layout_marginBottom="62dp" />
+
+        android:layout_marginRight="41dp"
+        />
 
     <LinearLayout
         android:id="@+id/nav"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center"
         android:background="@color/blue1"
         android:layout_alignParentBottom="true">
         <ImageView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:background="@drawable/ic_baseline_inbox_2"/>
         <ImageView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:layout_marginRight="50dp"
             android:onClick="lieuxHomeV3"
             android:layout_marginLeft="50dp"
             android:background="@drawable/ic_baseline_home_24"/>
         <ImageView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:onClick="lieuxMenuV3"
             android:background="@drawable/ic_baseline_next_week_24"/>
 
     </LinearLayout>
 
-</RelativeLayout>
+    </RelativeLayout>

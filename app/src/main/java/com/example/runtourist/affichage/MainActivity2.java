@@ -154,6 +154,10 @@ public class MainActivity2 extends AppCompatActivity {
         Intent intent =new Intent(context, MainAccueil.class);
         startActivity(intent);
     }
+    public void lieuxMenuV2(View v){
+        Intent intent =new Intent(context, MainActivity.class);
+        startActivity(intent);
+    }
     public void lieuxFavoris2(View v){
         Intent intent =new Intent(context,MainFavoris.class);
         startActivity(intent);

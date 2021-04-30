@@ -4,13 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".affichage.MainActivity"
-    android:background="@drawable/trees1">
+    tools:context=".affichage.MainActivity">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/trees_land"/>
+
 
     <ImageView
         android:id="@+id/backnord"
         android:layout_width="300dp"
-        android:layout_height="60dp"
+        android:layout_height="110dp"
         android:background="@drawable/rect_grey"
         android:layout_below="@id/textHead"
         android:layout_marginTop="10dp"
@@ -21,43 +29,46 @@
     <ImageView
         android:id="@+id/backest"
         android:layout_width="300dp"
-        android:layout_height="60dp"
-        android:background="@drawable/rect_grey"
-        android:layout_below="@id/backouest"
-        android:layout_marginTop="10dp"
+        android:layout_height="110dp"
+        android:background="@drawable/rect_grey1"
         android:layout_alignParentRight="true"
+        android:layout_below="@id/backnord"
+        android:layout_marginBottom="20dp"
         android:onClick="pageEst"
+        android:layout_above="@+id/bottomMenu"
         />
     <ImageView
         android:id="@+id/backouest"
         android:layout_width="300dp"
-        android:layout_height="60dp"
+        android:layout_height="110dp"
         android:background="@drawable/rect_grey1"
-        android:layout_below="@id/backnord"
-        android:layout_marginTop="10dp"
+        android:layout_below="@+id/textHead"
+        android:layout_above="@id/backsud"
+        android:layout_marginTop="20dp"
         android:layout_alignParentLeft="true"
+        android:onClick="pageOuest"
         />
+
     <ImageView
         android:id="@+id/backsud"
         android:layout_width="300dp"
-        android:layout_height="60dp"
-        android:background="@drawable/rect_grey1"
-        android:layout_below="@id/backest"
-        android:layout_marginTop="10dp"
+        android:layout_height="110dp"
         android:layout_alignParentLeft="true"
-        />
+        android:onClick="pageSud"
+        android:layout_marginBottom="10dp"
+        android:layout_above="@+id/bottomMenu"
+        android:background="@drawable/rect_grey" />
 
 
     <TextView
         android:id="@+id/textHead"
         android:fontFamily="@font/market_felt"
-        android:background="@color/blue1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:padding="5dp"
         android:textAlignment="center"
-        android:textColor="@color/yellow1"
+        android:textColor="@color/white"
         android:gravity="center"
         android:textSize="31dp"
         android:text="RunTourist"
@@ -66,8 +77,8 @@
 
     <ImageView
         android:id="@+id/imgN"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
         android:layout_alignTop="@id/backnord"
         android:layout_alignLeft="@id/backnord"
         android:layout_marginLeft="15dp"
@@ -91,8 +102,8 @@
 
     <ImageView
         android:id="@+id/imgE"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
         android:layout_alignTop="@id/backest"
         android:layout_alignLeft="@+id/backest"
         android:layout_marginLeft="20dp"
@@ -101,25 +112,25 @@
         tools:ignore="VectorDrawableCompat"
 
         />
+
     <TextView
         android:id="@+id/textE"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/market_felt"
-        android:textSize="40dp"
-        android:text="Est"
         android:layout_alignTop="@id/backest"
         android:layout_alignBottom="@+id/backest"
         android:layout_marginLeft="50dp"
-        android:gravity="center"
         android:layout_toRightOf="@+id/imgN"
-        />
+        android:fontFamily="@font/market_felt"
+        android:gravity="center"
+        android:text="Est"
+        android:textSize="40dp" />
 
 
     <ImageView
         android:id="@+id/imgO"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
         android:layout_alignTop="@id/backouest"
         android:layout_alignRight="@+id/backouest"
         android:layout_marginTop="10dp"
@@ -148,8 +159,8 @@
 
     <ImageView
         android:id="@+id/imgS"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
 
         android:layout_alignTop="@id/backsud"
         android:layout_alignRight="@id/backsud"
@@ -175,8 +186,9 @@
 
     <!-- Commentaire -->
     <LinearLayout
+        android:id="@+id/bottomMenu"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center"
         android:background="@color/blue1"
@@ -184,7 +196,7 @@
         <ImageView
             android:layout_width="60dp"
             android:layout_height="60dp"
-            android:onClick="lieuxMenuH1"
+            android:onClick="lieuxFavoris1"
             android:background="@drawable/ic_baseline_inbox_24"/>
         <ImageView
             android:layout_width="60dp"
@@ -197,17 +209,7 @@
         <ImageView
             android:layout_width="60dp"
             android:layout_height="60dp"
-            android:background="@drawable/ic_baseline_next_week_24"/>
+            android:background="@drawable/ic_baseline_next_week_2"/>
 
     </LinearLayout>
-
-
-
-
-
-
-
-
-
-
 </RelativeLayout>

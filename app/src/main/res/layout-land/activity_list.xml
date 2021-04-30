@@ -8,13 +8,15 @@
     <ImageView
         android:id="@+id/imgBack"
         android:layout_height="match_parent"
-        android:layout_width="match_parent"
-        app:srcCompat="@drawable/sea"
-        android:scaleType="centerCrop"
         android:layout_alignParentTop="true"
-       android:layout_alignParentBottom="true"
+        android:baselineAlignBottom="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentLeft="true"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        app:srcCompat="@drawable/sea_land"
+        android:scaleType="centerCrop"
+
 
         />
     <TextView
@@ -26,7 +28,8 @@
         android:gravity="center"
         android:textSize="31dp"
         android:fontFamily="@font/market_felt"
-        android:textColor="@color/grey"
+        android:textColor="@color/grey4"
+
         android:text="RunTourist : Nord"/>
 
     <ImageView
@@ -34,8 +37,8 @@
         android:layout_below="@+id/textH2"
         android:background="@drawable/rect_radius"
         android:layout_alignParentLeft="true"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="50dp"
+        android:layout_alignParentRight="true"
+
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 
@@ -45,13 +48,8 @@
         android:layout_height="359dp"
         android:layout_below="@id/textH2"
         android:layout_alignParentRight="true"
-
         android:layout_alignParentBottom="true"
-
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="160dp"
-        android:layout_marginRight="26dp"
-        android:layout_marginBottom="99dp" />
+         />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -60,21 +58,21 @@
         android:background="@color/blue1"
         android:layout_alignParentBottom="true">
         <ImageView
-            android:layout_width="80dp"
-            android:layout_height="80dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:onClick="lieuxFavoris2"
             android:background="@drawable/ic_baseline_inbox_24"/>
         <ImageView
-            android:layout_width="80dp"
-            android:layout_height="80dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:layout_gravity="center"
             android:layout_marginRight="50dp"
             android:layout_marginLeft="50dp"
             android:onClick="lieuxMenuH2"
             android:background="@drawable/ic_baseline_home_24"/>
         <ImageView
-            android:layout_width="80dp"
-            android:layout_height="80dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:onClick="lieuxMenuV2"
             android:background="@drawable/ic_baseline_next_week_2"/>
 
