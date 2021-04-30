@@ -45,9 +45,7 @@
         android:layout_height="359dp"
         android:layout_below="@id/textH2"
         android:layout_alignParentRight="true"
-
         android:layout_alignParentBottom="true"
-
         android:layout_marginLeft="50dp"
         android:layout_marginTop="160dp"
         android:layout_marginRight="26dp"

@@ -13,6 +13,17 @@
         android:layout_alignParentRight="true"
         android:layout_marginLeft="-30dp"
         android:layout_marginRight="-30dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/lieuxVbt"
+        android:layout_alignTop="@id/lieuxVbt"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:fontFamily="@font/market_felt"
+        android:background="@color/fonduj"
+        android:text="-Pour ajouter un lieu à vos favoris: Aller Lieux A visiter choisissez une cardinalité et appuyer enfoncer sur les lieux à visiter"
+        android:layout_toRightOf="@+id/fav" />
 
     <TextView
         android:id="@+id/accueil"
@@ -44,7 +55,6 @@
         android:layout_width="130dp"
         android:layout_height="130dp"
         android:text="Lieux a Visiter"
-
         android:textSize="20dp"
         android:layout_alignParentRight="true"
         android:layout_centerInParent="true"

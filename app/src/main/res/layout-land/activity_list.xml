@@ -16,8 +16,6 @@
         android:layout_alignParentBottom="true"
         app:srcCompat="@drawable/sea_land"
         android:scaleType="centerCrop"
-
-
         />
     <TextView
         android:id="@+id/textH2"
@@ -32,15 +30,7 @@
 
         android:text="RunTourist : Nord"/>
 
-    <ImageView
-        android:id="@+id/rect"
-        android:layout_below="@+id/textH2"
-        android:background="@drawable/rect_radius"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
 
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
 
     <ListView
         android:id="@+id/listA"

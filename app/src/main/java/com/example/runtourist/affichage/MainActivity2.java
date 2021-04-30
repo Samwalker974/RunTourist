@@ -100,7 +100,7 @@ public class MainActivity2 extends AppCompatActivity {
         nbreCell=5;
         mesCell[0]=new MyCell(R.string.cascade_niagara,R.string.info_cascade_niagara, R.drawable.cascade_niagara1);
         mesCell[1]=new MyCell(R.string.jardin_etat,R.string.info_jardin_etat,R.drawable.jardin_de_letat1);
-        mesCell[2]=new MyCell(R.string.roche_ecrite ,R.string.info_c_roche_ecrite,R.drawable.roche_ecrite1);
+        mesCell[2]=new MyCell(R.string.roche_ecrite ,R.string.info_roche_ecrite,R.drawable.roche_ecrite1);
         mesCell[3]=new MyCell(R.string.parc_du_colorado,R.string.info_parc_du_colorado,R.drawable.parc_du_colorado1);
         mesCell[4]=new MyCell(R.string.vanilleraie,R.string.info_vanilleraie,R.drawable.vanilleraie1);
      }
