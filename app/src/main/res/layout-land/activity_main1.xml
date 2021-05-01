@@ -12,7 +12,7 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
-        android:background="@drawable/trees1"/>
+        android:background="@drawable/trees_land"/>
 
 
     <ImageView

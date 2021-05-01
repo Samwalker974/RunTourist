@@ -5,7 +5,7 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/acctof"
+        android:background="@drawable/reunion_land"
         android:scaleType="centerInside"
         android:layout_alignParentLeft="true"
         android:layout_alignParentBottom="true"
