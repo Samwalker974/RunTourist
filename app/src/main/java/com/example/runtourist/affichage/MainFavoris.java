@@ -66,9 +66,7 @@ public class MainFavoris extends AppCompatActivity {
                     if(mesCellFav.length == 0){
                         infoUtile.setVisibility(View.VISIBLE);
                     }
-
                 }
-
             }
         });
 

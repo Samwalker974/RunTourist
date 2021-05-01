@@ -11,9 +11,6 @@ import com.example.runtourist.controller.MyCell;
 public class MyData extends SQLiteOpenHelper {
 
     private static final String MY_TABLE ="My_table.db";
-
-
-
     public MyData(Context context) {
         super(context,MY_TABLE,null,1 );
     }
@@ -36,16 +33,11 @@ public class MyData extends SQLiteOpenHelper {
         onCreate(db);
     }
     public void addIN(int name,int info ,int img){
-
         SQLiteDatabase db = this.getWritableDatabase();
-
         String strlSq = "insert into my_table (name, info,img) values ('"
                 + name +"', '"+ info +"', "+ img +")";
         this.getWritableDatabase().execSQL(strlSq);
         Log.i("ici","Ajout dans ma base de donnee");
-
-
-
     }
     //Envoie d'un String
     public MyCell[] getData(){
@@ -56,26 +48,21 @@ public class MyData extends SQLiteOpenHelper {
         String query = " select * from my_table";
         // Cusor data pour parcourir la table
         Cursor data = this.getWritableDatabase().rawQuery(query,null);
-
         //Creation d'une celule
         MyCell[] cells = new MyCell[data.getCount()];
-
         int i = 0;
         data.moveToFirst();
-
         //donne = data.getInt(0)+" "+data.getInt(1)+" "+data.getInt(2)+" "+data.getInt(3);
-
         int count = data.getCount();
         Log.i("ici",data.getCount()+"");
-
         while (i!=count){
             data.moveToPosition(i);
             //Log.i("ik1",donne);
             //Log.i("ik2",donne);
             Log.i("iko",data.getString(0));
-            cells[i] = new MyCell(data.getInt(0),data.getInt(1),data.getInt(2),data.getInt(3));
+            cells[i] = new MyCell(data.getInt(0),
+                    data.getInt(1), data.getInt(2),data.getInt(3));
             i++;
-
         }
         return cells;
     }

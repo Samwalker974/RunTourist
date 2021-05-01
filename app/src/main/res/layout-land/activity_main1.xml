@@ -12,6 +12,9 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
+        android:layout_marginLeft="-30dp"
+        android:layout_marginTop="-60dp"
+        android:layout_marginRight="-30dp"
         android:background="@drawable/trees_land"/>
 
 
@@ -71,7 +74,7 @@
         android:textColor="@color/white"
         android:gravity="center"
         android:textSize="31dp"
-        android:text="RunTourist"
+        android:text="Les Lieux a visiter"
         />
 
 

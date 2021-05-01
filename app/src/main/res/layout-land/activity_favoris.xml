@@ -9,12 +9,14 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:scaleType="centerInside"
         android:background="@drawable/mountaineers_land"
         android:layout_alignParentLeft="true"
         android:layout_alignParentBottom="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
-        android:layout_marginLeft="-100dp"
+        android:layout_marginLeft="-30dp"
+        android:layout_marginTop="-60dp"
         android:layout_marginRight="-30dp"
         />
 

@@ -62,7 +62,7 @@
         android:textColor="@color/grey"
         android:gravity="center"
         android:textSize="31dp"
-        android:text="RunTourist"
+        android:text="Les Lieux a visiter"
         />
 
 

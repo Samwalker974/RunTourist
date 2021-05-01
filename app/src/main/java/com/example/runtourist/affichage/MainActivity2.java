@@ -69,16 +69,16 @@ public class MainActivity2 extends AppCompatActivity {
                     if (pasDeDoublon(mesDonnes, mesCell[position])) {
                         //Ajout a ma base
                         maBase.addIN(mesCell[position].getIdLieux(), mesCell[position].getIdTextInfo(), mesCell[position].getIdImgC());
-                        Toast.makeText(context, "Ajout de l'element comme préferer", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(context, "Ajout au favoris", Toast.LENGTH_SHORT).show();
                         //Mise a jour de mes données
                         mesDonnes = maBase.getData();
 
                     } else {
-                        Toast.makeText(context, "Deja ajouter dans ma liste favorite", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(context, "Deja dans ma liste favorite", Toast.LENGTH_SHORT).show();
                     }
                 }else{
                     maBase.addIN(mesCell[position].getIdLieux(),mesCell[position].getIdTextInfo(),mesCell[position].getIdImgC());
-                    Toast.makeText(context,"Ajout de l'element comme préferer",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(context,"Ajout au favoris",Toast.LENGTH_SHORT).show();
                 }
                 return true;
             }

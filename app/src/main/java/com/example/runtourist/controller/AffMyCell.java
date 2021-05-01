@@ -16,9 +16,7 @@ import com.example.runtourist.controller.MyCell;
 //Affiche les cellules selon les donnée de MyCell
 //Les donnee sont une image, un texte donnant le Nom du Lieux et un autre etant les information de ce lieux
 public class AffMyCell extends ArrayAdapter<MyCell> {
-
     private final Context context;
-
     //Methode pour implementer la lecture de ma Liste de Celule
     public AffMyCell(@NonNull Context context, MyCell[] listeCell) {
         super(context, R.layout.cell_list, listeCell);
