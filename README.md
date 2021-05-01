@@ -5,6 +5,6 @@ Projet d'application Android sur les Lieux de la Réunion à visiter
 
 -Cree une base de donnée pour stocker de donnée
 
--Lors d'un clique sur le lieux celui ci ouvre une fenetre avec des infos complémentaire
+-Cree une fenetre favoris ou l'utilisateur peut stocker les lieux enregistrer
 
 
