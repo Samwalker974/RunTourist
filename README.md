@@ -1,10 +1,18 @@
-# RunTourist
-Projet d'application Android sur les Lieux de la Réunion à visiter
+# Projet Android 
+## Création d'une Application sur les différents lieux de la Réunion à visiter
 
--Cree une liste view qui nous permettra d'afficher la liste des lieux a visiter
+Nom de L'application : RunTourist
 
--Cree une base de donnée pour stocker de donnée
+Plateforme : Android Studio
 
--Cree une fenetre favoris ou l'utilisateur peut stocker les lieux enregistrer
+Portabilité : Android
+
+## Objectif :
+
+-Crée une ListView qui nous permettra d'afficher la liste des lieux à visiter.
+
+-Crée une base de données pour stocker de donnée. ( la base donnée sera interne au téléphone )
+
+-Crée une fenêtre de favoris ou l'utilisateur peut sauvegarder ces lieux préfères.
 
 
