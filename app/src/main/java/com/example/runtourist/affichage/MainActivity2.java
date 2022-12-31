@@ -150,7 +150,7 @@ public class MainActivity2 extends AppCompatActivity {
 
      }
 
-    public void lieuxMenuH2(View v){
+    public void lieuxHomeH2(View v){
         Intent intent =new Intent(context, MainAccueil.class);
         startActivity(intent);
     }

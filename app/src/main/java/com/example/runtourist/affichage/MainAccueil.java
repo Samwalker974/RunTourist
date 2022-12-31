@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -14,8 +15,8 @@ import com.example.runtourist.controller.MyCell;
 
 public class MainAccueil extends AppCompatActivity {
     Context context;
-    Button lieuxVbt;
-    Button lieuxFbt;
+    TextView lieuxVbt;
+    TextView lieuxFbt;
     MyData maBase;
     @Override
     public void onCreate(Bundle savedInstanceState) {

@@ -19,6 +19,10 @@
         <activity android:name=".affichage.MainActivity2"/>
         <activity android:name=".affichage.MainFavoris"/>
 
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
     </application>
 
 </manifest>

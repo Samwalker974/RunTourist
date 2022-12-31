@@ -1,96 +1,205 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent" android:layout_height="match_parent"
     >
+
+
     <ImageView
+        android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/acctof"
         android:scaleType="fitXY"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginLeft="-30dp"
-        android:layout_marginRight="-30dp"/>
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="130dp"
+        android:background="@drawable/rect_box2"
+        android:layout_marginBottom="6dp"
+        android:layout_marginRight="6dp"
+        app:layout_constraintBottom_toBottomOf="@+id/lieuxVbt"
+        app:layout_constraintEnd_toEndOf="@+id/lieuxVbt" />
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="130dp"
+        android:background="@drawable/rect_box2"
+        android:layout_marginBottom="6dp"
+        android:layout_marginRight="6dp"
+        app:layout_constraintBottom_toBottomOf="@+id/lieuxFbt"
+        app:layout_constraintEnd_toEndOf="@+id/lieuxFbt" />
+
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toEndOf="@+id/lieuxVbt"
+        android:id="@+id/textView"
+        android:layout_width="261dp"
+
+        android:layout_height="165dp"
         android:layout_alignTop="@id/lieuxVbt"
-        android:textSize="20dp"
-        android:gravity="center"
-        android:fontFamily="@font/market_felt"
+
         android:background="@color/fonduj"
-        android:text="-Pour ajouter un lieu à vos favoris: Aller Lieux A visiter choisissez une cardinalité et appuyer enfoncer sur les lieux à visiter"
-        android:layout_toRightOf="@+id/fav" />
+        android:fontFamily="@font/market_felt"
+        android:gravity="center"
+        android:text="Pour ajouter un lieu à vos favoris:\n Aller Lieux A visiter choisissez une cardinalité\n et appuyer enfoncer sur les lieux à visiter"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/lieuxFbt"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lieuxVbt"
+        app:layout_constraintVertical_bias="0.346" />
 
     <TextView
         android:id="@+id/accueil"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:fontFamily="@font/market_felt"
-        android:textSize="30dp"
+        android:layout_height="50dp"
         android:layout_alignParentTop="true"
-        android:textColor="@color/grey"
-        android:text="Accueil"/>
 
-    <Button
+        android:background="@drawable/rect_haut"
+        android:fontFamily="@font/changa_one"
+        android:gravity="center"
+        android:text="Accueil"
+        android:textColor="@color/yellow1"
+        android:textSize="30dp"
+        app:layout_constraintTop_toTopOf="parent"
+         />
+
+    <TextView
         android:id="@+id/lieuxVbt"
-        android:layout_width="130dp"
+        android:layout_width="300dp"
         android:layout_height="130dp"
+
+        android:layout_below="@+id/accueil"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/rect_box"
+        android:fontFamily="@font/changa_one"
+        android:gravity="center|top"
+        android:onClick="lieuxFavoris"
+        android:paddingTop="30dp"
         android:text="Lieux Favorite"
         android:textColor="@color/yellow1"
-        android:fontFamily="@font/market_felt"
-        android:layout_below="@id/accueil"
-        android:layout_marginTop="50dp"
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="30dp"
-        android:textSize="20dp"
-        android:onClick="lieuxFavoris"
-        android:background="@drawable/round_bo"/>
-    <Button
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/accueil" />
+
+    <TextView
         android:id="@+id/lieuxFbt"
-        android:layout_width="130dp"
+        android:layout_width="300dp"
         android:layout_height="130dp"
-        android:text="Lieux a Visiter"
-        android:textSize="20dp"
         android:layout_alignParentRight="true"
         android:layout_centerInParent="true"
-        android:layout_marginRight="30dp"
-        android:textColor="@color/yellow1"
-        android:fontFamily="@font/market_felt"
+        android:layout_marginBottom="44dp"
+        android:background="@drawable/rect_box"
+        android:fontFamily="@font/changa_one"
+        android:gravity="center|top"
         android:onClick="lieuxMenuV"
-        android:background="@drawable/round_bo"/>
+
+        android:paddingTop="30dp"
+        android:text="Lieux a Visiter"
+        android:textColor="@color/yellow1"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/rect_bas"
         android:gravity="center"
-        android:background="@color/blue1"
-        android:layout_alignParentBottom="true">
-        <ImageView
-            android:layout_width="80dp"
-            android:layout_height="80dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        tools:layout_editor_absoluteX="16dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
             android:onClick="lieuxFavoris"
-            android:background="@drawable/ic_baseline_inbox_24"/>
-        <ImageView
-            android:layout_width="80dp"
-            android:layout_height="80dp"
+            android:layout_marginRight="50dp">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_baseline_inbox_24"
+                 />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mes Favoris"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
             android:layout_marginRight="50dp"
-
-            android:layout_marginLeft="50dp"
-            android:background="@drawable/ic_baseline_home_2"/>
-        <ImageView
-            android:layout_width="80dp"
-            android:layout_height="80dp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_baseline_home_2" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Acceuil"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
             android:onClick="lieuxMenuV"
-            android:background="@drawable/ic_baseline_next_week_24"/>
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_baseline_next_week_24"
+                 />
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lieux A Visiter"/>
+
+        </LinearLayout>
     </LinearLayout>
 
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/ic_baseline_next_week_24"
+        app:layout_constraintBottom_toBottomOf="@+id/lieuxFbt"
+        app:layout_constraintEnd_toEndOf="@+id/lieuxFbt"
+        app:layout_constraintStart_toStartOf="@+id/lieuxFbt" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/ic_baseline_inbox_24"
+        app:layout_constraintBottom_toBottomOf="@+id/lieuxVbt"
+        app:layout_constraintEnd_toEndOf="@+id/lieuxVbt"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/lieuxVbt" />
 
 
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

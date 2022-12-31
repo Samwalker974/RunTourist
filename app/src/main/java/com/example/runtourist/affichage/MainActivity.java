@@ -85,7 +85,7 @@ public class MainActivity extends AppCompatActivity{
         intent.putExtra("Lieux", lieuxChoisi);
         startActivity(intent);
     }
-    public void lieuxMenuH1(View v){
+    public void lieuxHome(View v){
         Intent intent =new Intent(context, MainAccueil.class);
         startActivity(intent);
     }

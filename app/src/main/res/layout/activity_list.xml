@@ -20,13 +20,14 @@
     <TextView
         android:id="@+id/textH2"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_alignParentTop="true"
         android:textAlignment="center"
         android:gravity="center"
         android:textSize="31dp"
-        android:fontFamily="@font/market_felt"
-        android:textColor="@color/grey"
+        android:fontFamily="@font/changa_one"
+        android:background="@drawable/rect_haut"
+        android:textColor="@color/yellow1"
         android:text="RunTourist : Nord"/>
 
     <ImageView
@@ -50,32 +51,69 @@
         android:layout_marginTop="160dp"
         android:layout_marginRight="26dp"
         android:layout_marginBottom="99dp" />
+
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/rect_bas"
         android:gravity="center"
-        android:background="@color/blue1"
-        android:layout_alignParentBottom="true">
-        <ImageView
-            android:layout_width="80dp"
-            android:layout_height="80dp"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
             android:onClick="lieuxFavoris2"
-            android:background="@drawable/ic_baseline_inbox_24"/>
-        <ImageView
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_gravity="center"
-            android:layout_marginRight="50dp"
-            android:layout_marginLeft="50dp"
-            android:onClick="lieuxMenuH2"
-            android:background="@drawable/ic_baseline_home_24"/>
-        <ImageView
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:onClick="lieuxMenuV2"
-            android:background="@drawable/ic_baseline_next_week_2"/>
+            android:layout_marginRight="50dp">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_baseline_inbox_24"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mes Favoris"/>
 
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_marginRight="50dp"
+            android:orientation="vertical"
+            android:onClick="lieuxHomeH2"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_baseline_home_24" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Acceuil"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:onClick="lieuxMenuV2"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_baseline_next_week_2"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lieux A Visiter"/>
+
+        </LinearLayout>
     </LinearLayout>
 
 

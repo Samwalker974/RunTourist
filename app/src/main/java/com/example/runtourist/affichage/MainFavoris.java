@@ -29,7 +29,7 @@ public class MainFavoris extends AppCompatActivity {
     private ListView listF;
     private AffMyCell affMyCell;
     private TextView tf;
-    private Button btSuppAll;
+    private TextView btSuppAll;
     private TextView infoUtile;
     private Switch suppChoice;
     @Override
@@ -78,7 +78,7 @@ public class MainFavoris extends AppCompatActivity {
         startActivity(intent);
 
     }
-    public void lieuxHomeV3(View view){
+    public void lieuxHomeH3(View view){
         Intent intent =new Intent(context, MainAccueil.class);
         startActivity(intent);
 

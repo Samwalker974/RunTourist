@@ -52,17 +52,17 @@
 
     <TextView
         android:id="@+id/textHead"
-        android:fontFamily="@font/market_felt"
-
+        android:fontFamily="@font/changa_one"
+        android:background="@drawable/rect_haut"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:padding="5dp"
         android:textAlignment="center"
-        android:textColor="@color/grey"
+        android:textColor="@color/yellow1"
         android:gravity="center"
         android:textSize="31dp"
-        android:text="Les Lieux a visiter"
+        android:text="Lieux a visiter"
         />
 
 
@@ -176,31 +176,69 @@
         />
 
     <!-- Commentaire -->
+
+
     <LinearLayout
-        android:id="@+id/bottomMenu"
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/rect_bas"
         android:gravity="center"
-        android:background="@color/blue1"
-        android:layout_alignParentBottom="true">
-        <ImageView
-            android:layout_width="80dp"
-            android:layout_height="80dp"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
             android:onClick="lieuxFavoris1"
-            android:background="@drawable/ic_baseline_inbox_24"/>
-        <ImageView
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_gravity="center"
-            android:layout_marginRight="50dp"
-            android:layout_marginLeft="50dp"
-            android:onClick="lieuxMenuH1"
-            android:background="@drawable/ic_baseline_home_24"/>
-        <ImageView
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:background="@drawable/ic_baseline_next_week_2"/>
+            android:layout_marginRight="50dp">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_baseline_inbox_24"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mes Favoris"/>
 
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_marginRight="50dp"
+            android:orientation="vertical"
+            android:onClick="lieuxHome"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_baseline_home_24" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Acceuil"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_baseline_next_week_2"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lieux A Visiter"/>
+
+        </LinearLayout>
     </LinearLayout>
 </RelativeLayout>
