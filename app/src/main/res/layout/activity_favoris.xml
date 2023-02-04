@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
@@ -39,19 +39,21 @@
         android:layout_marginTop="40dp"
         android:layout_marginLeft="30dp"
         android:orientation="horizontal">
-         <TextView
-             android:fontFamily="@font/market_felt"
-             android:textSize="20dp"
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-             android:text="Supprimer"
-            />
-        <Switch
-            android:id="@+id/suppChoice"
-            android:checked="false"
+
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-        />
+
+            android:fontFamily="@font/changa_one"
+            android:text="Supprimer"
+            android:textSize="20dp" />
+
+        <Switch
+            android:id="@+id/suppChoice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            tools:ignore="TouchTargetSizeCheck" />
     </LinearLayout>
 
     <TextView
@@ -61,12 +63,14 @@
         android:layout_above="@id/linearLayout"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="29dp"
-        android:onClick="clickSuppAll"
-        android:gravity="center"
-        android:textColor="@color/white"
-        android:textSize="15dp"
         android:background="@color/red"
-        android:text="Vider mes favoris" />
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:onClick="clickSuppAll"
+        android:text="Vider mes favoris"
+        android:textColor="#FFFFFF"
+        android:textSize="15dp"
+        tools:ignore="TextSizeCheck,TextContrastCheck" />
 
     <TextView
         android:id="@+id/infoUtil"
@@ -119,6 +123,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="@color/white"
                 android:text="Mes Favoris"/>
 
         </LinearLayout>
@@ -128,15 +133,18 @@
             android:orientation="vertical"
             android:onClick="lieuxHomeH3"
             android:layout_height="wrap_content">
+
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_gravity="center"
-                android:background="@drawable/ic_baseline_home_24" />
+                android:background="@drawable/ic_baseline_home_24"
+                tools:ignore="ImageContrastCheck" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:textColor="@color/white"
                 android:text="Acceuil"/>
         </LinearLayout>
         <LinearLayout
@@ -149,10 +157,11 @@
                 android:layout_height="50dp"
                 android:layout_gravity="center"
                 android:background="@drawable/ic_baseline_next_week_24"
-                />
+                android:contentDescription="TODO" />
 
             <TextView
                 android:layout_width="wrap_content"
+                android:textColor="@color/white"
                 android:layout_height="wrap_content"
                 android:text="Lieux A Visiter"/>
 

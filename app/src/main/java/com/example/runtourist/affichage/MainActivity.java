@@ -1,6 +1,7 @@
 package com.example.runtourist.affichage;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 
 import android.content.Context;
 import android.content.Intent;
@@ -13,7 +14,7 @@ import com.example.runtourist.R;
 
 public class MainActivity extends AppCompatActivity{
     private ImageView imgN, imgE, imgO, imgS;
-    private ImageView backN, backE, backO, backS;
+    private ConstraintLayout backN, backE, backO, backS;
     private TextView textN, textE, textO, textS;
     private Button button1;
     Context context;
@@ -34,10 +35,10 @@ public class MainActivity extends AppCompatActivity{
         imgS = (ImageView) this.findViewById(R.id.imgS);
 
         //Constructeur qui recupere les id des imageView mais ici leurs fond
-        backN = (ImageView) this.findViewById(R.id.backnord);
-        backE = (ImageView) this.findViewById(R.id.backest);
-        backO = (ImageView) this.findViewById(R.id.backouest);
-        backS = (ImageView) this.findViewById(R.id.backsud);
+        backN = (ConstraintLayout) this.findViewById(R.id.backnord);
+        backE = (ConstraintLayout) this.findViewById(R.id.backest);
+        backO = (ConstraintLayout) this.findViewById(R.id.backouest);
+        backS = (ConstraintLayout) this.findViewById(R.id.backsud);
         //Constructeur qui recupere les id des textView
         textN = (TextView) this.findViewById(R.id.textN);
         textE = (TextView) this.findViewById(R.id.textE);

@@ -139,6 +139,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="@color/white"
                 android:text="Mes Favoris"/>
 
         </LinearLayout>
@@ -156,6 +157,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:textColor="@color/white"
                 android:text="Acceuil"/>
         </LinearLayout>
         <LinearLayout
@@ -173,6 +175,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="@color/white"
                 android:text="Lieux A Visiter"/>
 
         </LinearLayout>

@@ -1,122 +1,148 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".affichage.MainActivity"
-    android:background="@drawable/trees1">
+    android:background="@drawable/trees1"
+    tools:context=".affichage.MainActivity">
 
-    <ImageView
+
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/backnord"
         android:layout_width="300dp"
         android:layout_height="110dp"
-        android:background="@drawable/rect_grey"
-        android:layout_below="@id/textHead"
-        android:layout_marginTop="20dp"
         android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
+        android:background="@drawable/rect_grey"
         android:onClick="pageNord"
-        />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textHead" />
 
-    <ImageView
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/backest"
         android:layout_width="300dp"
         android:layout_height="110dp"
-        android:background="@drawable/rect_grey"
-        android:layout_below="@id/backouest"
-        android:layout_marginTop="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rect_grey"
         android:onClick="pageEst"
-        />
-    <ImageView
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backnord"
+        android:layout_alignParentEnd="true" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/backouest"
         android:layout_width="300dp"
         android:layout_height="110dp"
-        android:background="@drawable/rect_grey1"
-        android:layout_below="@id/backnord"
-        android:layout_marginTop="20dp"
         android:layout_alignParentLeft="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/rect_grey1"
         android:onClick="pageOuest"
-        />
+        app:layout_constraintBottom_toTopOf="@+id/backsud"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="SpeakableTextPresentCheck"
+        android:layout_alignParentStart="true" />
 
-    <ImageView
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/backsud"
         android:layout_width="300dp"
         android:layout_height="110dp"
-        android:layout_below="@id/backest"
-        android:layout_alignParentLeft="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/rect_grey1"
         android:onClick="pageSud"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/rect_grey1" />
-
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textHead"
-        android:fontFamily="@font/changa_one"
-        android:background="@drawable/rect_haut"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
+        android:background="@drawable/rect_haut"
+        android:fontFamily="@font/changa_one"
+        android:gravity="center"
         android:padding="5dp"
+        android:text="Lieux a visiter"
         android:textAlignment="center"
         android:textColor="@color/yellow1"
-        android:gravity="center"
         android:textSize="31dp"
-        android:text="Lieux a visiter"
-        />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
     <ImageView
         android:id="@+id/imgN"
         android:layout_width="90dp"
         android:layout_height="90dp"
-        android:layout_alignTop="@id/backnord"
         android:layout_alignLeft="@id/backnord"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="10dp"
+        android:layout_alignTop="@id/backnord"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/backnord"
+        app:layout_constraintStart_toStartOf="@+id/backnord"
+        app:layout_constraintTop_toTopOf="@+id/backnord"
+        app:layout_constraintVertical_bias="0.15"
         app:srcCompat="@drawable/nord"
         tools:ignore="VectorDrawableCompat" />
+
+
     <TextView
         android:id="@+id/textN"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/market_felt"
-        android:textSize="40dp"
-        android:text="Nord"
         android:layout_alignTop="@id/backnord"
         android:layout_alignBottom="@+id/backnord"
-        android:layout_marginLeft="50dp"
-        android:gravity="center"
         android:layout_toRightOf="@+id/imgN"
-        />
-
+        android:fontFamily="@font/market_felt"
+        android:gravity="center"
+        android:text="Nord"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toBottomOf="@+id/backnord"
+        app:layout_constraintEnd_toEndOf="@+id/backnord"
+        app:layout_constraintStart_toEndOf="@+id/imgN"
+        app:layout_constraintTop_toTopOf="@+id/backnord" />
 
     <ImageView
         android:id="@+id/imgE"
         android:layout_width="90dp"
         android:layout_height="90dp"
-        android:layout_alignTop="@id/backest"
         android:layout_alignLeft="@+id/backest"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="10dp"
-        app:srcCompat="@drawable/est"
-        tools:ignore="VectorDrawableCompat"
+        android:layout_alignTop="@id/backest"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
 
-        />
+        app:layout_constraintBottom_toBottomOf="@+id/backest"
+        app:layout_constraintEnd_toEndOf="@+id/backest"
+        app:layout_constraintTop_toTopOf="@+id/backest"
+        app:layout_constraintVertical_bias="0.45"
+        app:srcCompat="@drawable/est"
+        tools:ignore="VectorDrawableCompat" />
+
+
     <TextView
         android:id="@+id/textE"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/market_felt"
-        android:textSize="40dp"
-        android:text="Est"
         android:layout_alignTop="@id/backest"
         android:layout_alignBottom="@+id/backest"
-        android:layout_marginLeft="50dp"
-        android:gravity="center"
         android:layout_toRightOf="@+id/imgN"
-        />
-
+        android:fontFamily="@font/market_felt"
+        android:gravity="center"
+        android:text="Est"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toBottomOf="@+id/backest"
+        app:layout_constraintEnd_toStartOf="@+id/imgE"
+        app:layout_constraintStart_toStartOf="@+id/backest"
+        app:layout_constraintTop_toTopOf="@+id/backest" />
 
     <ImageView
         android:id="@+id/imgO"
@@ -124,59 +150,71 @@
         android:layout_height="90dp"
         android:layout_alignTop="@id/backouest"
         android:layout_alignRight="@+id/backouest"
-        android:layout_marginTop="10dp"
-        android:layout_marginRight="20dp"
 
 
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+
+        app:layout_constraintBottom_toBottomOf="@+id/backouest"
+        app:layout_constraintStart_toStartOf="@+id/backouest"
+        app:layout_constraintTop_toTopOf="@+id/backouest"
         app:srcCompat="@drawable/ouest"
-        tools:ignore="VectorDrawableCompat"
+        tools:ignore="VectorDrawableCompat" />
 
-        />
+
     <TextView
         android:id="@+id/textO"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/market_felt"
-        android:textSize="40dp"
-        android:text="Ouest"
         android:layout_alignTop="@id/backouest"
         android:layout_alignBottom="@+id/backouest"
-        android:layout_marginRight="50dp"
-        android:gravity="center"
         android:layout_toLeftOf="@id/imgO"
+        android:fontFamily="@font/market_felt"
+        android:gravity="center"
+        android:text="Ouest"
+        android:textSize="40dp"
 
-        />
-
+        app:layout_constraintBottom_toBottomOf="@+id/backouest"
+        app:layout_constraintEnd_toEndOf="@+id/backouest"
+        app:layout_constraintStart_toEndOf="@+id/imgO"
+        app:layout_constraintTop_toTopOf="@+id/backouest" />
 
     <ImageView
         android:id="@+id/imgS"
-        android:layout_width="90dp"
-        android:layout_height="90dp"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
 
         android:layout_alignTop="@id/backsud"
         android:layout_alignRight="@id/backsud"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/backsud"
+        app:layout_constraintEnd_toEndOf="@+id/backsud"
+        app:layout_constraintTop_toTopOf="@+id/backsud"
+        app:layout_constraintVertical_bias="0.44"
         app:srcCompat="@drawable/sud"
-        tools:ignore="VectorDrawableCompat"
-        android:layout_marginTop="10dp"
-        android:layout_marginRight="20dp"
-        />
+        tools:ignore="VectorDrawableCompat" />
+
+    <!-- Commentaire -->
+
+
     <TextView
         android:id="@+id/textS"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/market_felt"
-        android:textSize="40dp"
-        android:text="Sud"
         android:layout_alignTop="@id/backsud"
         android:layout_alignBottom="@+id/backsud"
-        android:layout_marginRight="50dp"
-        android:gravity="center"
         android:layout_toLeftOf="@id/imgO"
+        android:fontFamily="@font/market_felt"
+        android:gravity="center"
+        android:text="Sud"
 
-        />
-
-    <!-- Commentaire -->
-
+        android:textSize="40dp"
+        app:layout_constraintBottom_toBottomOf="@+id/backsud"
+        app:layout_constraintEnd_toStartOf="@+id/imgS"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="@+id/backsud"
+        app:layout_constraintTop_toTopOf="@+id/backsud" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -186,59 +224,71 @@
         android:background="@drawable/rect_bas"
         android:gravity="center"
         android:orientation="horizontal"
-        >
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
+            android:layout_marginRight="50dp"
             android:onClick="lieuxFavoris1"
-            android:layout_marginRight="50dp">
+            android:orientation="vertical">
+
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_gravity="center"
-                android:background="@drawable/ic_baseline_inbox_24"
-                />
+                android:background="@drawable/ic_baseline_inbox_24" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Mes Favoris"/>
+                android:text="Mes Favoris"
+                android:textColor="@color/white" />
 
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginRight="50dp"
-            android:orientation="vertical"
             android:onClick="lieuxHome"
-            android:layout_height="wrap_content">
+            android:orientation="vertical">
+
             <ImageView
                 android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_height="45dp"
                 android:layout_gravity="center"
                 android:background="@drawable/ic_baseline_home_24" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Acceuil"/>
+                android:text="Acceuil"
+                android:textColor="@color/white" />
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="wrap_content"
-            android:orientation="vertical"
+            android:layout_height="wrap_content"
 
-            android:layout_height="wrap_content">
+            android:orientation="vertical"
+            tools:ignore="ExtraText">
+
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_gravity="center"
-                android:background="@drawable/ic_baseline_next_week_2"
-                />
+                android:background="@drawable/ic_baseline_next_week_2" />
+            v
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Lieux A Visiter"/>
+                android:text="Lieux A Visiter"
+                android:textColor="@color/white" />
 
         </LinearLayout>
     </LinearLayout>
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
