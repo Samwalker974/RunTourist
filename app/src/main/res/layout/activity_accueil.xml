@@ -75,7 +75,6 @@
         android:id="@+id/lieuxVbt"
         android:layout_width="300dp"
         android:layout_height="130dp"
-
         android:layout_below="@+id/accueil"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"

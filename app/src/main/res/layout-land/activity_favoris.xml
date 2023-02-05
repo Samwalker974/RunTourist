@@ -1,119 +1,213 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
     >
+
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:scaleType="centerInside"
-        android:background="@drawable/mountaineers_land"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginLeft="-30dp"
-        android:layout_marginTop="-60dp"
-        android:layout_marginRight="-30dp"
-        />
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/favtof" />
 
     <TextView
         android:id="@+id/fav"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:fontFamily="@font/market_felt"
-        android:textSize="30dp"
+        android:layout_width="300dp"
+        android:layout_height="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:textColor="@color/grey"
-        android:text="Mes Favoris"/>
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="201dp"
+        android:layout_marginLeft="201dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="182dp"
+        android:layout_marginRight="182dp"
+        android:background="@drawable/rect_haut"
+        android:fontFamily="@font/changa_one"
+        android:gravity="center"
+        android:text="Mes Favoris"
+        android:textColor="@color/yellow1"
+        android:textSize="20dp" />
+
     <LinearLayout
         android:id="@+id/sup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/fav"
         android:layout_alignParentLeft="true"
-
+        android:layout_marginTop="40dp"
         android:layout_marginLeft="30dp"
         android:orientation="horizontal">
-         <TextView
-             android:fontFamily="@font/market_felt"
-             android:textSize="20dp"
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-             android:text="Supprimer"
-            />
-        <Switch
-            android:id="@+id/suppChoice"
-            android:checked="false"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-        />
+
     </LinearLayout>
-    <Button
+
+    <TextView
         android:id="@+id/suppAll"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@id/nav"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/fav"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/red"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
         android:onClick="clickSuppAll"
-        android:layout_centerHorizontal="true"
         android:text="Vider mes favoris"
-        />
+        android:textColor="#FFFFFF"
+        android:textSize="15dp"
+        tools:ignore="TextSizeCheck,TextContrastCheck" />
+
     <TextView
         android:id="@+id/infoUtil"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/sup"
-        android:layout_marginTop="20dp"
+        android:layout_width="600dp"
+        android:layout_height="200dp"
+        android:layout_above="@+id/linearLayout"
+        android:layout_below="@+id/suppAll"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
 
+        android:layout_alignParentRight="true"
+
+
+        android:layout_marginLeft="54dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginBottom="32dp"
         android:fontFamily="@font/market_felt"
-        android:textSize="25dp"
-        android:layout_marginLeft="50dp"
-
-        android:text="Malheureusement ta liste de favoris est vide vas en ajouter de nouveau"/>
+        android:gravity="center"
+        android:text="Malheureusement ta liste de favoris est vide vas en ajouter de nouveau"
+        android:textSize="30dp"
+        android:visibility="invisible" />
 
     <ListView
         android:id="@+id/listFav"
-        android:scrollbars="horizontal|vertical"
-        android:layout_width="wrap_content"
+        android:layout_width="428dp"
         android:layout_height="wrap_content"
-        android:layout_above="@id/suppAll"
-        android:layout_below="@id/sup"
-        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@+id/infoUtil"
+        android:layout_alignBottom="@+id/infoUtil"
 
+        android:layout_centerHorizontal="true"
         android:layout_marginRight="41dp"
-        />
+
+        android:scrollbars="horizontal|vertical" />
+
 
     <LinearLayout
-        android:id="@+id/nav"
-        android:layout_width="match_parent"
+        android:id="@+id/linearLayout"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center"
-        android:background="@color/blue1"
-        android:layout_alignParentBottom="true">
-        <ImageView
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:background="@drawable/ic_baseline_inbox_2"/>
-        <ImageView
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_marginRight="50dp"
-            android:onClick="lieuxHomeV3"
-            android:layout_marginLeft="50dp"
-            android:background="@drawable/ic_baseline_home_24"/>
-        <ImageView
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:onClick="lieuxMenuV3"
-            android:background="@drawable/ic_baseline_next_week_24"/>
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="163dp"
+        android:layout_marginLeft="163dp"
+        android:layout_marginEnd="188dp"
+        android:layout_marginRight="188dp"
 
+        android:background="@drawable/rect_bas"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50dp"
+
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_baseline_inbox_2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mes Favoris"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50dp"
+            android:onClick="lieuxHomeH3"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_baseline_home_24"
+                tools:ignore="ImageContrastCheck" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Acceuil"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="lieuxMenuV3"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_baseline_next_week_24"
+                android:contentDescription="TODO" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lieux A Visiter"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
     </LinearLayout>
 
-    </RelativeLayout>
+    <TextView
+        android:id="@+id/supprimeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fav"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/changa_one"
+        android:text="Supprimer"
+        android:textSize="20dp" />
+
+    <Switch
+        android:id="@+id/suppChoice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_alignTop="@+id/supprimeText"
+
+
+        android:layout_toEndOf="@+id/supprimeText"
+        android:layout_toRightOf="@+id/supprimeText"
+        android:checked="false"
+        tools:ignore="TouchTargetSizeCheck" />
+
+</RelativeLayout>
